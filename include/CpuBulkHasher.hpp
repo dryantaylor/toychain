@@ -1,0 +1,28 @@
+#ifndef CPU_BULKHASHER_HPP
+#define CPU_BULKHASHER_HPP
+
+#include "BulkHasher.hpp"
+#include <vector>
+#include <string>
+
+class CpuBulkHasher : public BulkHasher {
+  public:
+    CpuBulkHasher(std::size_t batchSize, int startingDifficulty = 1) : BulkHasher(batchSize), targetDifficulty(startingDifficulty) {};
+    void setHashes(const std::vector<std::string>& plainText) override;
+    bool computeHash() override;
+    const std::vector<SHA256Hash>& getHashes() override;
+
+    void computeIsMoreDifficult() override;
+    const std::vector<bool>& getIsMoreDifficult() override;
+    void setNewDifficulty(int newTarget) override;
+
+  private:
+      std::vector<std::string> plainText;
+      bool textSet = false;
+      std::vector<SHA256Hash> hashes;
+      std::vector<bool> isMoreDifficult;
+      int targetDifficulty = 0;
+};
+
+
+#endif
