@@ -1,5 +1,7 @@
 #include "CpuBulkHasher.hpp"
+
 #include <openssl/evp.h>
+#include <stdexcept>
 
 std::array<std::uint64_t, 4> sha256_words_be(const std::string& input) {
   unsigned char hash[32];
@@ -70,13 +72,13 @@ bool meetsDifficulty(const SHA256Hash& hash, int difficulty){
 }
 
 
-inline void CpuBulkHasher::setHashes(const std::vector<std::string>& plainText)
+void CpuBulkHasher::setHashes(std::vector<std::string> plainText)
 {
   this->plainText = plainText;
   textSet = true;
 }
 
-inline bool CpuBulkHasher::computeHash()
+bool CpuBulkHasher::computeHash()
 {
   if (!textSet){
     return false;
@@ -88,13 +90,17 @@ inline bool CpuBulkHasher::computeHash()
   return true;
 }
 
-inline const std::vector<SHA256Hash> &CpuBulkHasher::getHashes()
+const std::vector<SHA256Hash> &CpuBulkHasher::getHashes()
 {
   textSet = false;
   return hashes;
 }
 
-inline void CpuBulkHasher::computeIsMoreDifficult()
+const std::string &CpuBulkHasher::getPlaintextAt(std::size_t index){
+  return this->plainText.at(index);
+}
+
+void CpuBulkHasher::computeIsMoreDifficult()
 {
   isMoreDifficult = {};
   for (std::size_t i = 0; i < batchSize; i++){
@@ -102,12 +108,12 @@ inline void CpuBulkHasher::computeIsMoreDifficult()
   }
 }
 
-inline const std::vector<bool> &CpuBulkHasher::getIsMoreDifficult()
+const std::vector<bool> &CpuBulkHasher::getIsMoreDifficult()
 {
   return isMoreDifficult;
 }
 
-inline void CpuBulkHasher::setNewDifficulty(int newTarget)
+void CpuBulkHasher::setNewDifficulty(int newTarget)
 {
     this->targetDifficulty = newTarget;
 }

@@ -11,6 +11,8 @@ class SearchControl {
   public:
     SearchControl(std::unique_ptr<BulkHasher> hasher, std::ostream& outstream,const std::string& name, SHA256Hash startingHash );
     void runGuess();
+  
+    std::uint64_t current_proccessed = 0;
   private:
   std::unique_ptr<BulkHasher> hasher;
   std::ostream& outstream;
@@ -18,6 +20,7 @@ class SearchControl {
   SHA256Hash currentHash;
   std::mt19937 randomGen;
   std::uniform_int_distribution<std::uint64_t> distrib;
+
 };
 
 #endif

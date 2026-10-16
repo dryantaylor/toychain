@@ -68,6 +68,11 @@ std::string SHA256Hash::to_string() const
   return oss.str();
 }
 
+const std::uint64_t& SHA256Hash::w0() const { return value[0]; }
+const std::uint64_t& SHA256Hash::w1() const { return value[1]; }
+const std::uint64_t& SHA256Hash::w2() const { return value[2]; }
+const std::uint64_t& SHA256Hash::w3() const { return value[3]; }
+
 int SHA256Hash::difficulty() const
 {
   int leadingZeroBits = 0;

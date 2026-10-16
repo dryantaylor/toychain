@@ -1,9 +1,11 @@
 #include "CpuBulkHasher.hpp"
+#include "OpenCLBulkHasher.hpp"
 #include "SearchControl.hpp"
 #include <vector>
 #include <map>
 #include <iostream>
 #include <fstream>
+#include <string>
 
 std::map<std::string, std::string> parseArgs(int argc, char** argv){
   std::vector<std::string> args;
@@ -12,7 +14,7 @@ std::map<std::string, std::string> parseArgs(int argc, char** argv){
   }
 
 
-  std::map<std::string, std::string> argMap = {{"name", ""}, {"hash",""}, {"batch", "1"}, {"file",""},
+  std::map<std::string, std::string> argMap = {{"name", ""}, {"hash",""}, {"batch", "0"}, {"file",""},
   {"hashCore","CPU"}};
   for (std::size_t i = 0; i < args.size()-1; i++){
     if (args.at(i) == "--name" || args.at(i) == "-n"){
@@ -37,11 +39,18 @@ std::map<std::string, std::string> parseArgs(int argc, char** argv){
 
 std::unique_ptr<BulkHasher> selectHashingCore(const std::string& coreName, std::size_t batchSize, int difficulty){
   if (coreName == "CPU"){
+    if (batchSize == 0){
+      batchSize = 1;
+    }
     return std::make_unique<CpuBulkHasher>(batchSize, difficulty);
   }
 
+  if (coreName == "OpenCL"){
+    return std::make_unique<OpenCLBulkHasher>(batchSize, difficulty);
+  }
   throw std::runtime_error("Invalid hashing Core selected");
 }
+
 
 int main(int argc, char** argv) {
 
@@ -49,14 +58,13 @@ int main(int argc, char** argv) {
   SHA256Hash startingHash = args.at("hash");
   int difficulty = startingHash.difficulty()+1;
   std::string name = args.at("name");
-
   std::size_t batchSize = std::stoi(args.at("batch"));
-
   bool usesCout = args.at("file") == "";
   std::ofstream* outFile;
   if (!usesCout) {
     outFile = new std::ofstream(args.at("file"));
   }
+
   auto searcher = SearchControl(
     std::move(selectHashingCore(args.at("hashCore"), batchSize, difficulty)),
     (usesCout ? std::cout : *outFile),
@@ -66,6 +74,7 @@ int main(int argc, char** argv) {
 
   while (true){
     searcher.runGuess();
+    std::cout << "Current processed: " << searcher.current_proccessed << std::endl;
   }
 
   return 0;
