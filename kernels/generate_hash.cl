@@ -106,7 +106,7 @@ static void sha256_hash_string(__global const uchar* input_data, size_t length, 
     output_words[3] = ((u64)state[6] << 32) | (u64)state[7];
 }
 
-__kernel void generate_hash(__global const uchar* input_blob,
+static void generate_hash(__global const uchar* input_blob,
                            __global const int* input_lengths,
                            __global const int* input_offsets,
                            __global ulong* output_hashes,

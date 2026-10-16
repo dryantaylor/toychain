@@ -18,18 +18,17 @@ public:
     static std::string readFile(const std::string& path);
 
     void setHashes(std::vector<std::string> plainText) override;
-    bool computeHash() override;
+    bool compute() override;
+
     const std::vector<SHA256Hash>& getHashes() override;
     const std::string& getPlaintextAt(std::size_t index) override;
-    void computeIsMoreDifficult() override;
     const std::vector<bool>& getIsMoreDifficult() override;
     void setNewDifficulty(int newTarget) override;
 
 private:
     cl::Context context;
     cl::CommandQueue queue;
-    cl::Kernel hashKernel;
-    cl::Kernel difficultyKernel;
+    cl::Kernel computeKernel;
     std::vector<std::string> plainText;
     std::vector<SHA256Hash> hashes;
     std::vector<bool> isMoreDifficult;

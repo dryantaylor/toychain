@@ -1,0 +1,2981 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Windows - 10.0.22631 - AMD64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeMinGWFindMake.cmake:5 (find_program)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_MAKE_PROGRAM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "mingw32-make.exe"
+    candidate_directories:
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Microsoft VS Code/bin/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Tailscale/"
+      - "C:/Program Files/WSL/"
+      - "C:/Program Files/PuTTY/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/"
+      - "/REGISTRY-NOTFOUND/bin/"
+      - "c:/MinGW/bin/"
+      - "/MinGW/bin/"
+      - "/REGISTRY-NOTFOUND/MinGW/bin/"
+    searched_directories:
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/mingw32-make.exe.com"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/mingw32-make.exe"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/mingw32-make.exe.com"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/mingw32-make.exe"
+      - "C:/Windows/System32/mingw32-make.exe.com"
+      - "C:/Windows/System32/mingw32-make.exe"
+      - "C:/Windows/mingw32-make.exe.com"
+      - "C:/Windows/mingw32-make.exe"
+      - "C:/Windows/System32/wbem/mingw32-make.exe.com"
+      - "C:/Windows/System32/wbem/mingw32-make.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mingw32-make.exe.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mingw32-make.exe"
+      - "C:/Windows/System32/OpenSSH/mingw32-make.exe.com"
+      - "C:/Windows/System32/OpenSSH/mingw32-make.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mingw32-make.exe.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mingw32-make.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/mingw32-make.exe.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/mingw32-make.exe"
+      - "C:/Program Files/Git/cmd/mingw32-make.exe.com"
+      - "C:/Program Files/Git/cmd/mingw32-make.exe"
+      - "C:/Program Files/Microsoft VS Code/bin/mingw32-make.exe.com"
+      - "C:/Program Files/Microsoft VS Code/bin/mingw32-make.exe"
+      - "C:/Program Files/dotnet/mingw32-make.exe.com"
+      - "C:/Program Files/dotnet/mingw32-make.exe"
+      - "C:/Program Files/CMake/bin/mingw32-make.exe.com"
+      - "C:/Program Files/CMake/bin/mingw32-make.exe"
+      - "C:/Program Files/Tailscale/mingw32-make.exe.com"
+      - "C:/Program Files/Tailscale/mingw32-make.exe"
+      - "C:/Program Files/WSL/mingw32-make.exe.com"
+      - "C:/Program Files/WSL/mingw32-make.exe"
+      - "C:/Program Files/PuTTY/mingw32-make.exe.com"
+      - "C:/Program Files/PuTTY/mingw32-make.exe"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/mingw32-make.exe.com"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/mingw32-make.exe"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/mingw32-make.exe.com"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/mingw32-make.exe"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/mingw32-make.exe.com"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/mingw32-make.exe"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/mingw32-make.exe.com"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/mingw32-make.exe"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/mingw32-make.exe.com"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/mingw32-make.exe"
+      - "C:/msys64/ucrt64/bin/mingw32-make.exe.com"
+    found: "C:/msys64/ucrt64/bin/mingw32-make.exe"
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\diary\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\diary\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Microsoft Application Virtualization\\Sequencer\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\WSL\\"
+        - "C:\\Program Files\\PuTTY\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2025.3.4\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompiler.cmake:115 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:71 (_cmake_find_compiler_path)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "g++"
+    candidate_directories:
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Microsoft VS Code/bin/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Tailscale/"
+      - "C:/Program Files/WSL/"
+      - "C:/Program Files/PuTTY/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/"
+    searched_directories:
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/g++.com"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/g++.exe"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/g++"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/g++.com"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/g++.exe"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/g++"
+      - "C:/Windows/System32/g++.com"
+      - "C:/Windows/System32/g++.exe"
+      - "C:/Windows/System32/g++"
+      - "C:/Windows/g++.com"
+      - "C:/Windows/g++.exe"
+      - "C:/Windows/g++"
+      - "C:/Windows/System32/wbem/g++.com"
+      - "C:/Windows/System32/wbem/g++.exe"
+      - "C:/Windows/System32/wbem/g++"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/g++.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/g++.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/g++"
+      - "C:/Windows/System32/OpenSSH/g++.com"
+      - "C:/Windows/System32/OpenSSH/g++.exe"
+      - "C:/Windows/System32/OpenSSH/g++"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/g++.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/g++.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/g++"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/g++.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/g++.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/g++"
+      - "C:/Program Files/Git/cmd/g++.com"
+      - "C:/Program Files/Git/cmd/g++.exe"
+      - "C:/Program Files/Git/cmd/g++"
+      - "C:/Program Files/Microsoft VS Code/bin/g++.com"
+      - "C:/Program Files/Microsoft VS Code/bin/g++.exe"
+      - "C:/Program Files/Microsoft VS Code/bin/g++"
+      - "C:/Program Files/dotnet/g++.com"
+      - "C:/Program Files/dotnet/g++.exe"
+      - "C:/Program Files/dotnet/g++"
+      - "C:/Program Files/CMake/bin/g++.com"
+      - "C:/Program Files/CMake/bin/g++.exe"
+      - "C:/Program Files/CMake/bin/g++"
+      - "C:/Program Files/Tailscale/g++.com"
+      - "C:/Program Files/Tailscale/g++.exe"
+      - "C:/Program Files/Tailscale/g++"
+      - "C:/Program Files/WSL/g++.com"
+      - "C:/Program Files/WSL/g++.exe"
+      - "C:/Program Files/WSL/g++"
+      - "C:/Program Files/PuTTY/g++.com"
+      - "C:/Program Files/PuTTY/g++.exe"
+      - "C:/Program Files/PuTTY/g++"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/g++.com"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/g++.exe"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/g++"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/g++.com"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/g++.exe"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/g++"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/g++.com"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/g++.exe"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/g++"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/g++.com"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/g++.exe"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/g++"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/g++.com"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/g++.exe"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/g++"
+      - "C:/msys64/ucrt64/bin/g++.com"
+    found: "C:/msys64/ucrt64/bin/g++.exe"
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\diary\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\diary\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Microsoft Application Virtualization\\Sequencer\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\WSL\\"
+        - "C:\\Program Files\\PuTTY\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2025.3.4\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:468 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:506 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\diary\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\diary\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Microsoft Application Virtualization\\Sequencer\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\WSL\\"
+        - "C:\\Program Files\\PuTTY\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2025.3.4\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/msys64/ucrt64/bin/g++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+      
+      The CXX compiler identification is GNU, found in:
+        C:/Users/diary/Documents/uni/cryptography/toychain_cpp/build/release/CMakeFiles/4.3.1/CompilerIdCXX/a.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ar"
+    candidate_directories:
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Microsoft VS Code/bin/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Tailscale/"
+      - "C:/Program Files/WSL/"
+      - "C:/Program Files/PuTTY/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/"
+    searched_directories:
+      - "C:/msys64/ucrt64/bin/ar.com"
+    found: "C:/msys64/ucrt64/bin/ar.exe"
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\diary\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\diary\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Microsoft Application Virtualization\\Sequencer\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\WSL\\"
+        - "C:\\Program Files\\PuTTY\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2025.3.4\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_RANLIB"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ranlib"
+    candidate_directories:
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Microsoft VS Code/bin/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Tailscale/"
+      - "C:/Program Files/WSL/"
+      - "C:/Program Files/PuTTY/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/"
+    searched_directories:
+      - "C:/msys64/ucrt64/bin/ranlib.com"
+    found: "C:/msys64/ucrt64/bin/ranlib.exe"
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\diary\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\diary\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Microsoft Application Virtualization\\Sequencer\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\WSL\\"
+        - "C:\\Program Files\\PuTTY\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2025.3.4\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_STRIP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "strip"
+    candidate_directories:
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Microsoft VS Code/bin/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Tailscale/"
+      - "C:/Program Files/WSL/"
+      - "C:/Program Files/PuTTY/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/"
+    searched_directories:
+      - "C:/msys64/ucrt64/bin/strip.com"
+    found: "C:/msys64/ucrt64/bin/strip.exe"
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\diary\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\diary\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Microsoft Application Virtualization\\Sequencer\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\WSL\\"
+        - "C:\\Program Files\\PuTTY\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2025.3.4\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ld"
+    candidate_directories:
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Microsoft VS Code/bin/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Tailscale/"
+      - "C:/Program Files/WSL/"
+      - "C:/Program Files/PuTTY/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/"
+    searched_directories:
+      - "C:/msys64/ucrt64/bin/ld.com"
+    found: "C:/msys64/ucrt64/bin/ld.exe"
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\diary\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\diary\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Microsoft Application Virtualization\\Sequencer\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\WSL\\"
+        - "C:\\Program Files\\PuTTY\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2025.3.4\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_NM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "nm"
+    candidate_directories:
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Microsoft VS Code/bin/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Tailscale/"
+      - "C:/Program Files/WSL/"
+      - "C:/Program Files/PuTTY/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/"
+    searched_directories:
+      - "C:/msys64/ucrt64/bin/nm.com"
+    found: "C:/msys64/ucrt64/bin/nm.exe"
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\diary\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\diary\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Microsoft Application Virtualization\\Sequencer\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\WSL\\"
+        - "C:\\Program Files\\PuTTY\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2025.3.4\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJDUMP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objdump"
+    candidate_directories:
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Microsoft VS Code/bin/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Tailscale/"
+      - "C:/Program Files/WSL/"
+      - "C:/Program Files/PuTTY/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/"
+    searched_directories:
+      - "C:/msys64/ucrt64/bin/objdump.com"
+    found: "C:/msys64/ucrt64/bin/objdump.exe"
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\diary\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\diary\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Microsoft Application Virtualization\\Sequencer\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\WSL\\"
+        - "C:\\Program Files\\PuTTY\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2025.3.4\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJCOPY"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objcopy"
+    candidate_directories:
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Microsoft VS Code/bin/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Tailscale/"
+      - "C:/Program Files/WSL/"
+      - "C:/Program Files/PuTTY/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/"
+    searched_directories:
+      - "C:/msys64/ucrt64/bin/objcopy.com"
+    found: "C:/msys64/ucrt64/bin/objcopy.exe"
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\diary\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\diary\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Microsoft Application Virtualization\\Sequencer\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\WSL\\"
+        - "C:\\Program Files\\PuTTY\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2025.3.4\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_READELF"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "readelf"
+    candidate_directories:
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Microsoft VS Code/bin/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Tailscale/"
+      - "C:/Program Files/WSL/"
+      - "C:/Program Files/PuTTY/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/"
+    searched_directories:
+      - "C:/msys64/ucrt64/bin/readelf.com"
+    found: "C:/msys64/ucrt64/bin/readelf.exe"
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\diary\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\diary\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Microsoft Application Virtualization\\Sequencer\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\WSL\\"
+        - "C:\\Program Files\\PuTTY\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2025.3.4\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_DLLTOOL"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "dlltool"
+    candidate_directories:
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Microsoft VS Code/bin/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Tailscale/"
+      - "C:/Program Files/WSL/"
+      - "C:/Program Files/PuTTY/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/"
+    searched_directories:
+      - "C:/msys64/ucrt64/bin/dlltool.com"
+    found: "C:/msys64/ucrt64/bin/dlltool.exe"
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\diary\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\diary\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Microsoft Application Virtualization\\Sequencer\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\WSL\\"
+        - "C:\\Program Files\\PuTTY\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2025.3.4\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_ADDR2LINE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "addr2line"
+    candidate_directories:
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Microsoft VS Code/bin/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Tailscale/"
+      - "C:/Program Files/WSL/"
+      - "C:/Program Files/PuTTY/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/"
+    searched_directories:
+      - "C:/msys64/ucrt64/bin/addr2line.com"
+    found: "C:/msys64/ucrt64/bin/addr2line.exe"
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\diary\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\diary\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Microsoft Application Virtualization\\Sequencer\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\WSL\\"
+        - "C:\\Program Files\\PuTTY\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2025.3.4\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_TAPI"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "tapi"
+    candidate_directories:
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Microsoft VS Code/bin/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Tailscale/"
+      - "C:/Program Files/WSL/"
+      - "C:/Program Files/PuTTY/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/"
+    searched_directories:
+      - "C:/msys64/ucrt64/bin/tapi.com"
+      - "C:/msys64/ucrt64/bin/tapi.exe"
+      - "C:/msys64/ucrt64/bin/tapi"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/tapi.com"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/tapi.exe"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/tapi"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/tapi.com"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/tapi.exe"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/tapi"
+      - "C:/Windows/System32/tapi.com"
+      - "C:/Windows/System32/tapi.exe"
+      - "C:/Windows/System32/tapi"
+      - "C:/Windows/tapi.com"
+      - "C:/Windows/tapi.exe"
+      - "C:/Windows/tapi"
+      - "C:/Windows/System32/wbem/tapi.com"
+      - "C:/Windows/System32/wbem/tapi.exe"
+      - "C:/Windows/System32/wbem/tapi"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/tapi.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/tapi.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/tapi"
+      - "C:/Windows/System32/OpenSSH/tapi.com"
+      - "C:/Windows/System32/OpenSSH/tapi.exe"
+      - "C:/Windows/System32/OpenSSH/tapi"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/tapi.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/tapi.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/tapi"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/tapi.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/tapi.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/tapi"
+      - "C:/Program Files/Git/cmd/tapi.com"
+      - "C:/Program Files/Git/cmd/tapi.exe"
+      - "C:/Program Files/Git/cmd/tapi"
+      - "C:/Program Files/Microsoft VS Code/bin/tapi.com"
+      - "C:/Program Files/Microsoft VS Code/bin/tapi.exe"
+      - "C:/Program Files/Microsoft VS Code/bin/tapi"
+      - "C:/Program Files/dotnet/tapi.com"
+      - "C:/Program Files/dotnet/tapi.exe"
+      - "C:/Program Files/dotnet/tapi"
+      - "C:/Program Files/CMake/bin/tapi.com"
+      - "C:/Program Files/CMake/bin/tapi.exe"
+      - "C:/Program Files/CMake/bin/tapi"
+      - "C:/Program Files/Tailscale/tapi.com"
+      - "C:/Program Files/Tailscale/tapi.exe"
+      - "C:/Program Files/Tailscale/tapi"
+      - "C:/Program Files/WSL/tapi.com"
+      - "C:/Program Files/WSL/tapi.exe"
+      - "C:/Program Files/WSL/tapi"
+      - "C:/Program Files/PuTTY/tapi.com"
+      - "C:/Program Files/PuTTY/tapi.exe"
+      - "C:/Program Files/PuTTY/tapi"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/tapi.com"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/tapi.exe"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/tapi"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/tapi.com"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/tapi.exe"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/tapi"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/tapi.com"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/tapi.exe"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/tapi"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/tapi.com"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/tapi.exe"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/tapi"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/tapi.com"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/tapi.exe"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/tapi"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/tapi.com"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/tapi.exe"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/tapi"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\diary\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\diary\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Microsoft Application Virtualization\\Sequencer\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\WSL\\"
+        - "C:\\Program Files\\PuTTY\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2025.3.4\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ar-15.2"
+      - "gcc-ar-15"
+      - "gcc-ar15"
+      - "gcc-ar"
+    candidate_directories:
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Microsoft VS Code/bin/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Tailscale/"
+      - "C:/Program Files/WSL/"
+      - "C:/Program Files/PuTTY/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/"
+    searched_directories:
+      - "C:/msys64/ucrt64/bin/gcc-ar-15.2.com"
+      - "C:/msys64/ucrt64/bin/gcc-ar-15.2.exe"
+      - "C:/msys64/ucrt64/bin/gcc-ar-15.2"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15.2.com"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15.2.exe"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15.2"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-15.2.com"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-15.2.exe"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-15.2"
+      - "C:/Windows/System32/gcc-ar-15.2.com"
+      - "C:/Windows/System32/gcc-ar-15.2.exe"
+      - "C:/Windows/System32/gcc-ar-15.2"
+      - "C:/Windows/gcc-ar-15.2.com"
+      - "C:/Windows/gcc-ar-15.2.exe"
+      - "C:/Windows/gcc-ar-15.2"
+      - "C:/Windows/System32/wbem/gcc-ar-15.2.com"
+      - "C:/Windows/System32/wbem/gcc-ar-15.2.exe"
+      - "C:/Windows/System32/wbem/gcc-ar-15.2"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-15.2.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-15.2.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-15.2"
+      - "C:/Windows/System32/OpenSSH/gcc-ar-15.2.com"
+      - "C:/Windows/System32/OpenSSH/gcc-ar-15.2.exe"
+      - "C:/Windows/System32/OpenSSH/gcc-ar-15.2"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ar-15.2.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ar-15.2.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ar-15.2"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/gcc-ar-15.2.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/gcc-ar-15.2.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/gcc-ar-15.2"
+      - "C:/Program Files/Git/cmd/gcc-ar-15.2.com"
+      - "C:/Program Files/Git/cmd/gcc-ar-15.2.exe"
+      - "C:/Program Files/Git/cmd/gcc-ar-15.2"
+      - "C:/Program Files/Microsoft VS Code/bin/gcc-ar-15.2.com"
+      - "C:/Program Files/Microsoft VS Code/bin/gcc-ar-15.2.exe"
+      - "C:/Program Files/Microsoft VS Code/bin/gcc-ar-15.2"
+      - "C:/Program Files/dotnet/gcc-ar-15.2.com"
+      - "C:/Program Files/dotnet/gcc-ar-15.2.exe"
+      - "C:/Program Files/dotnet/gcc-ar-15.2"
+      - "C:/Program Files/CMake/bin/gcc-ar-15.2.com"
+      - "C:/Program Files/CMake/bin/gcc-ar-15.2.exe"
+      - "C:/Program Files/CMake/bin/gcc-ar-15.2"
+      - "C:/Program Files/Tailscale/gcc-ar-15.2.com"
+      - "C:/Program Files/Tailscale/gcc-ar-15.2.exe"
+      - "C:/Program Files/Tailscale/gcc-ar-15.2"
+      - "C:/Program Files/WSL/gcc-ar-15.2.com"
+      - "C:/Program Files/WSL/gcc-ar-15.2.exe"
+      - "C:/Program Files/WSL/gcc-ar-15.2"
+      - "C:/Program Files/PuTTY/gcc-ar-15.2.com"
+      - "C:/Program Files/PuTTY/gcc-ar-15.2.exe"
+      - "C:/Program Files/PuTTY/gcc-ar-15.2"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/gcc-ar-15.2.com"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/gcc-ar-15.2.exe"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/gcc-ar-15.2"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/gcc-ar-15.2.com"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/gcc-ar-15.2.exe"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/gcc-ar-15.2"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/gcc-ar-15.2.com"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/gcc-ar-15.2.exe"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/gcc-ar-15.2"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/gcc-ar-15.2.com"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/gcc-ar-15.2.exe"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/gcc-ar-15.2"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/gcc-ar-15.2.com"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/gcc-ar-15.2.exe"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/gcc-ar-15.2"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/gcc-ar-15.2.com"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/gcc-ar-15.2.exe"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/gcc-ar-15.2"
+      - "C:/msys64/ucrt64/bin/gcc-ar-15.com"
+      - "C:/msys64/ucrt64/bin/gcc-ar-15.exe"
+      - "C:/msys64/ucrt64/bin/gcc-ar-15"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15.com"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15.exe"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-15.com"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-15.exe"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-15"
+      - "C:/Windows/System32/gcc-ar-15.com"
+      - "C:/Windows/System32/gcc-ar-15.exe"
+      - "C:/Windows/System32/gcc-ar-15"
+      - "C:/Windows/gcc-ar-15.com"
+      - "C:/Windows/gcc-ar-15.exe"
+      - "C:/Windows/gcc-ar-15"
+      - "C:/Windows/System32/wbem/gcc-ar-15.com"
+      - "C:/Windows/System32/wbem/gcc-ar-15.exe"
+      - "C:/Windows/System32/wbem/gcc-ar-15"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-15.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-15.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-15"
+      - "C:/Windows/System32/OpenSSH/gcc-ar-15.com"
+      - "C:/Windows/System32/OpenSSH/gcc-ar-15.exe"
+      - "C:/Windows/System32/OpenSSH/gcc-ar-15"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ar-15.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ar-15.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ar-15"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/gcc-ar-15.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/gcc-ar-15.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/gcc-ar-15"
+      - "C:/Program Files/Git/cmd/gcc-ar-15.com"
+      - "C:/Program Files/Git/cmd/gcc-ar-15.exe"
+      - "C:/Program Files/Git/cmd/gcc-ar-15"
+      - "C:/Program Files/Microsoft VS Code/bin/gcc-ar-15.com"
+      - "C:/Program Files/Microsoft VS Code/bin/gcc-ar-15.exe"
+      - "C:/Program Files/Microsoft VS Code/bin/gcc-ar-15"
+      - "C:/Program Files/dotnet/gcc-ar-15.com"
+      - "C:/Program Files/dotnet/gcc-ar-15.exe"
+      - "C:/Program Files/dotnet/gcc-ar-15"
+      - "C:/Program Files/CMake/bin/gcc-ar-15.com"
+      - "C:/Program Files/CMake/bin/gcc-ar-15.exe"
+      - "C:/Program Files/CMake/bin/gcc-ar-15"
+      - "C:/Program Files/Tailscale/gcc-ar-15.com"
+      - "C:/Program Files/Tailscale/gcc-ar-15.exe"
+      - "C:/Program Files/Tailscale/gcc-ar-15"
+      - "C:/Program Files/WSL/gcc-ar-15.com"
+      - "C:/Program Files/WSL/gcc-ar-15.exe"
+      - "C:/Program Files/WSL/gcc-ar-15"
+      - "C:/Program Files/PuTTY/gcc-ar-15.com"
+      - "C:/Program Files/PuTTY/gcc-ar-15.exe"
+      - "C:/Program Files/PuTTY/gcc-ar-15"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/gcc-ar-15.com"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/gcc-ar-15.exe"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/gcc-ar-15"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/gcc-ar-15.com"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/gcc-ar-15.exe"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/gcc-ar-15"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/gcc-ar-15.com"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/gcc-ar-15.exe"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/gcc-ar-15"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/gcc-ar-15.com"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/gcc-ar-15.exe"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/gcc-ar-15"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/gcc-ar-15.com"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/gcc-ar-15.exe"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/gcc-ar-15"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/gcc-ar-15.com"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/gcc-ar-15.exe"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/gcc-ar-15"
+      - "C:/msys64/ucrt64/bin/gcc-ar15.com"
+      - "C:/msys64/ucrt64/bin/gcc-ar15.exe"
+      - "C:/msys64/ucrt64/bin/gcc-ar15"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar15.com"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar15.exe"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar15"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar15.com"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar15.exe"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar15"
+      - "C:/Windows/System32/gcc-ar15.com"
+      - "C:/Windows/System32/gcc-ar15.exe"
+      - "C:/Windows/System32/gcc-ar15"
+      - "C:/Windows/gcc-ar15.com"
+      - "C:/Windows/gcc-ar15.exe"
+      - "C:/Windows/gcc-ar15"
+      - "C:/Windows/System32/wbem/gcc-ar15.com"
+      - "C:/Windows/System32/wbem/gcc-ar15.exe"
+      - "C:/Windows/System32/wbem/gcc-ar15"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar15.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar15.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar15"
+      - "C:/Windows/System32/OpenSSH/gcc-ar15.com"
+      - "C:/Windows/System32/OpenSSH/gcc-ar15.exe"
+      - "C:/Windows/System32/OpenSSH/gcc-ar15"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ar15.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ar15.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ar15"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/gcc-ar15.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/gcc-ar15.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/gcc-ar15"
+      - "C:/Program Files/Git/cmd/gcc-ar15.com"
+      - "C:/Program Files/Git/cmd/gcc-ar15.exe"
+      - "C:/Program Files/Git/cmd/gcc-ar15"
+      - "C:/Program Files/Microsoft VS Code/bin/gcc-ar15.com"
+      - "C:/Program Files/Microsoft VS Code/bin/gcc-ar15.exe"
+      - "C:/Program Files/Microsoft VS Code/bin/gcc-ar15"
+      - "C:/Program Files/dotnet/gcc-ar15.com"
+      - "C:/Program Files/dotnet/gcc-ar15.exe"
+      - "C:/Program Files/dotnet/gcc-ar15"
+      - "C:/Program Files/CMake/bin/gcc-ar15.com"
+      - "C:/Program Files/CMake/bin/gcc-ar15.exe"
+      - "C:/Program Files/CMake/bin/gcc-ar15"
+      - "C:/Program Files/Tailscale/gcc-ar15.com"
+      - "C:/Program Files/Tailscale/gcc-ar15.exe"
+      - "C:/Program Files/Tailscale/gcc-ar15"
+      - "C:/Program Files/WSL/gcc-ar15.com"
+      - "C:/Program Files/WSL/gcc-ar15.exe"
+      - "C:/Program Files/WSL/gcc-ar15"
+      - "C:/Program Files/PuTTY/gcc-ar15.com"
+      - "C:/Program Files/PuTTY/gcc-ar15.exe"
+      - "C:/Program Files/PuTTY/gcc-ar15"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/gcc-ar15.com"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/gcc-ar15.exe"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/gcc-ar15"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/gcc-ar15.com"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/gcc-ar15.exe"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/gcc-ar15"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/gcc-ar15.com"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/gcc-ar15.exe"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/gcc-ar15"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/gcc-ar15.com"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/gcc-ar15.exe"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/gcc-ar15"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/gcc-ar15.com"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/gcc-ar15.exe"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/gcc-ar15"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/gcc-ar15.com"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/gcc-ar15.exe"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/gcc-ar15"
+      - "C:/msys64/ucrt64/bin/gcc-ar.com"
+    found: "C:/msys64/ucrt64/bin/gcc-ar.exe"
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\diary\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\diary\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Microsoft Application Virtualization\\Sequencer\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\WSL\\"
+        - "C:\\Program Files\\PuTTY\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2025.3.4\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ranlib-15.2"
+      - "gcc-ranlib-15"
+      - "gcc-ranlib15"
+      - "gcc-ranlib"
+    candidate_directories:
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Microsoft VS Code/bin/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Tailscale/"
+      - "C:/Program Files/WSL/"
+      - "C:/Program Files/PuTTY/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/"
+    searched_directories:
+      - "C:/msys64/ucrt64/bin/gcc-ranlib-15.2.com"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib-15.2.exe"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib-15.2"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15.2.com"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15.2.exe"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15.2"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-15.2.com"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-15.2.exe"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-15.2"
+      - "C:/Windows/System32/gcc-ranlib-15.2.com"
+      - "C:/Windows/System32/gcc-ranlib-15.2.exe"
+      - "C:/Windows/System32/gcc-ranlib-15.2"
+      - "C:/Windows/gcc-ranlib-15.2.com"
+      - "C:/Windows/gcc-ranlib-15.2.exe"
+      - "C:/Windows/gcc-ranlib-15.2"
+      - "C:/Windows/System32/wbem/gcc-ranlib-15.2.com"
+      - "C:/Windows/System32/wbem/gcc-ranlib-15.2.exe"
+      - "C:/Windows/System32/wbem/gcc-ranlib-15.2"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-15.2.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-15.2.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-15.2"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib-15.2.com"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib-15.2.exe"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib-15.2"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ranlib-15.2.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ranlib-15.2.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ranlib-15.2"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/gcc-ranlib-15.2.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/gcc-ranlib-15.2.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/gcc-ranlib-15.2"
+      - "C:/Program Files/Git/cmd/gcc-ranlib-15.2.com"
+      - "C:/Program Files/Git/cmd/gcc-ranlib-15.2.exe"
+      - "C:/Program Files/Git/cmd/gcc-ranlib-15.2"
+      - "C:/Program Files/Microsoft VS Code/bin/gcc-ranlib-15.2.com"
+      - "C:/Program Files/Microsoft VS Code/bin/gcc-ranlib-15.2.exe"
+      - "C:/Program Files/Microsoft VS Code/bin/gcc-ranlib-15.2"
+      - "C:/Program Files/dotnet/gcc-ranlib-15.2.com"
+      - "C:/Program Files/dotnet/gcc-ranlib-15.2.exe"
+      - "C:/Program Files/dotnet/gcc-ranlib-15.2"
+      - "C:/Program Files/CMake/bin/gcc-ranlib-15.2.com"
+      - "C:/Program Files/CMake/bin/gcc-ranlib-15.2.exe"
+      - "C:/Program Files/CMake/bin/gcc-ranlib-15.2"
+      - "C:/Program Files/Tailscale/gcc-ranlib-15.2.com"
+      - "C:/Program Files/Tailscale/gcc-ranlib-15.2.exe"
+      - "C:/Program Files/Tailscale/gcc-ranlib-15.2"
+      - "C:/Program Files/WSL/gcc-ranlib-15.2.com"
+      - "C:/Program Files/WSL/gcc-ranlib-15.2.exe"
+      - "C:/Program Files/WSL/gcc-ranlib-15.2"
+      - "C:/Program Files/PuTTY/gcc-ranlib-15.2.com"
+      - "C:/Program Files/PuTTY/gcc-ranlib-15.2.exe"
+      - "C:/Program Files/PuTTY/gcc-ranlib-15.2"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/gcc-ranlib-15.2.com"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/gcc-ranlib-15.2.exe"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/gcc-ranlib-15.2"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/gcc-ranlib-15.2.com"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/gcc-ranlib-15.2.exe"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/gcc-ranlib-15.2"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/gcc-ranlib-15.2.com"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/gcc-ranlib-15.2.exe"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/gcc-ranlib-15.2"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-15.2.com"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-15.2.exe"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-15.2"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/gcc-ranlib-15.2.com"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/gcc-ranlib-15.2.exe"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/gcc-ranlib-15.2"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/gcc-ranlib-15.2.com"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/gcc-ranlib-15.2.exe"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/gcc-ranlib-15.2"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib-15.com"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib-15.exe"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib-15"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15.com"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15.exe"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-15.com"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-15.exe"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-15"
+      - "C:/Windows/System32/gcc-ranlib-15.com"
+      - "C:/Windows/System32/gcc-ranlib-15.exe"
+      - "C:/Windows/System32/gcc-ranlib-15"
+      - "C:/Windows/gcc-ranlib-15.com"
+      - "C:/Windows/gcc-ranlib-15.exe"
+      - "C:/Windows/gcc-ranlib-15"
+      - "C:/Windows/System32/wbem/gcc-ranlib-15.com"
+      - "C:/Windows/System32/wbem/gcc-ranlib-15.exe"
+      - "C:/Windows/System32/wbem/gcc-ranlib-15"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-15.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-15.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-15"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib-15.com"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib-15.exe"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib-15"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ranlib-15.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ranlib-15.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ranlib-15"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/gcc-ranlib-15.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/gcc-ranlib-15.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/gcc-ranlib-15"
+      - "C:/Program Files/Git/cmd/gcc-ranlib-15.com"
+      - "C:/Program Files/Git/cmd/gcc-ranlib-15.exe"
+      - "C:/Program Files/Git/cmd/gcc-ranlib-15"
+      - "C:/Program Files/Microsoft VS Code/bin/gcc-ranlib-15.com"
+      - "C:/Program Files/Microsoft VS Code/bin/gcc-ranlib-15.exe"
+      - "C:/Program Files/Microsoft VS Code/bin/gcc-ranlib-15"
+      - "C:/Program Files/dotnet/gcc-ranlib-15.com"
+      - "C:/Program Files/dotnet/gcc-ranlib-15.exe"
+      - "C:/Program Files/dotnet/gcc-ranlib-15"
+      - "C:/Program Files/CMake/bin/gcc-ranlib-15.com"
+      - "C:/Program Files/CMake/bin/gcc-ranlib-15.exe"
+      - "C:/Program Files/CMake/bin/gcc-ranlib-15"
+      - "C:/Program Files/Tailscale/gcc-ranlib-15.com"
+      - "C:/Program Files/Tailscale/gcc-ranlib-15.exe"
+      - "C:/Program Files/Tailscale/gcc-ranlib-15"
+      - "C:/Program Files/WSL/gcc-ranlib-15.com"
+      - "C:/Program Files/WSL/gcc-ranlib-15.exe"
+      - "C:/Program Files/WSL/gcc-ranlib-15"
+      - "C:/Program Files/PuTTY/gcc-ranlib-15.com"
+      - "C:/Program Files/PuTTY/gcc-ranlib-15.exe"
+      - "C:/Program Files/PuTTY/gcc-ranlib-15"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/gcc-ranlib-15.com"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/gcc-ranlib-15.exe"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/gcc-ranlib-15"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/gcc-ranlib-15.com"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/gcc-ranlib-15.exe"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/gcc-ranlib-15"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/gcc-ranlib-15.com"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/gcc-ranlib-15.exe"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/gcc-ranlib-15"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-15.com"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-15.exe"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-15"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/gcc-ranlib-15.com"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/gcc-ranlib-15.exe"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/gcc-ranlib-15"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/gcc-ranlib-15.com"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/gcc-ranlib-15.exe"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/gcc-ranlib-15"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib15.com"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib15.exe"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib15"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib15.com"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib15.exe"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib15"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib15.com"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib15.exe"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib15"
+      - "C:/Windows/System32/gcc-ranlib15.com"
+      - "C:/Windows/System32/gcc-ranlib15.exe"
+      - "C:/Windows/System32/gcc-ranlib15"
+      - "C:/Windows/gcc-ranlib15.com"
+      - "C:/Windows/gcc-ranlib15.exe"
+      - "C:/Windows/gcc-ranlib15"
+      - "C:/Windows/System32/wbem/gcc-ranlib15.com"
+      - "C:/Windows/System32/wbem/gcc-ranlib15.exe"
+      - "C:/Windows/System32/wbem/gcc-ranlib15"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib15.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib15.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib15"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib15.com"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib15.exe"
+      - "C:/Windows/System32/OpenSSH/gcc-ranlib15"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ranlib15.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ranlib15.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/gcc-ranlib15"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/gcc-ranlib15.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/gcc-ranlib15.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/gcc-ranlib15"
+      - "C:/Program Files/Git/cmd/gcc-ranlib15.com"
+      - "C:/Program Files/Git/cmd/gcc-ranlib15.exe"
+      - "C:/Program Files/Git/cmd/gcc-ranlib15"
+      - "C:/Program Files/Microsoft VS Code/bin/gcc-ranlib15.com"
+      - "C:/Program Files/Microsoft VS Code/bin/gcc-ranlib15.exe"
+      - "C:/Program Files/Microsoft VS Code/bin/gcc-ranlib15"
+      - "C:/Program Files/dotnet/gcc-ranlib15.com"
+      - "C:/Program Files/dotnet/gcc-ranlib15.exe"
+      - "C:/Program Files/dotnet/gcc-ranlib15"
+      - "C:/Program Files/CMake/bin/gcc-ranlib15.com"
+      - "C:/Program Files/CMake/bin/gcc-ranlib15.exe"
+      - "C:/Program Files/CMake/bin/gcc-ranlib15"
+      - "C:/Program Files/Tailscale/gcc-ranlib15.com"
+      - "C:/Program Files/Tailscale/gcc-ranlib15.exe"
+      - "C:/Program Files/Tailscale/gcc-ranlib15"
+      - "C:/Program Files/WSL/gcc-ranlib15.com"
+      - "C:/Program Files/WSL/gcc-ranlib15.exe"
+      - "C:/Program Files/WSL/gcc-ranlib15"
+      - "C:/Program Files/PuTTY/gcc-ranlib15.com"
+      - "C:/Program Files/PuTTY/gcc-ranlib15.exe"
+      - "C:/Program Files/PuTTY/gcc-ranlib15"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/gcc-ranlib15.com"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/gcc-ranlib15.exe"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/gcc-ranlib15"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/gcc-ranlib15.com"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/gcc-ranlib15.exe"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/gcc-ranlib15"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/gcc-ranlib15.com"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/gcc-ranlib15.exe"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/gcc-ranlib15"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/gcc-ranlib15.com"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/gcc-ranlib15.exe"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/gcc-ranlib15"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/gcc-ranlib15.com"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/gcc-ranlib15.exe"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/gcc-ranlib15"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/gcc-ranlib15.com"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/gcc-ranlib15.exe"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/gcc-ranlib15"
+      - "C:/msys64/ucrt64/bin/gcc-ranlib.com"
+    found: "C:/msys64/ucrt64/bin/gcc-ranlib.exe"
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\diary\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\diary\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Microsoft Application Virtualization\\Sequencer\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\WSL\\"
+        - "C:\\Program Files\\PuTTY\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2025.3.4\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineRCCompiler.cmake:40 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Windows-GNU.cmake:167 (enable_language)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Windows-GNU-CXX.cmake:2 (__windows_compiler_gnu)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCXXInformation.cmake:48 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_RC_COMPILER"
+    description: "RC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "windres"
+      - "windres"
+    candidate_directories:
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Microsoft VS Code/bin/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Tailscale/"
+      - "C:/Program Files/WSL/"
+      - "C:/Program Files/PuTTY/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/CMake/sbin/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files (x86)/toychain/bin/"
+      - "C:/Program Files (x86)/toychain/sbin/"
+      - "C:/Program Files (x86)/toychain/"
+    searched_directories:
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/windres.com"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/windres.exe"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/windres"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/windres.com"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/windres.exe"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/windres"
+      - "C:/Windows/System32/windres.com"
+      - "C:/Windows/System32/windres.exe"
+      - "C:/Windows/System32/windres"
+      - "C:/Windows/windres.com"
+      - "C:/Windows/windres.exe"
+      - "C:/Windows/windres"
+      - "C:/Windows/System32/wbem/windres.com"
+      - "C:/Windows/System32/wbem/windres.exe"
+      - "C:/Windows/System32/wbem/windres"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/windres.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/windres.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/windres"
+      - "C:/Windows/System32/OpenSSH/windres.com"
+      - "C:/Windows/System32/OpenSSH/windres.exe"
+      - "C:/Windows/System32/OpenSSH/windres"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/windres.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/windres.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/windres"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/windres.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/windres.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/windres"
+      - "C:/Program Files/Git/cmd/windres.com"
+      - "C:/Program Files/Git/cmd/windres.exe"
+      - "C:/Program Files/Git/cmd/windres"
+      - "C:/Program Files/Microsoft VS Code/bin/windres.com"
+      - "C:/Program Files/Microsoft VS Code/bin/windres.exe"
+      - "C:/Program Files/Microsoft VS Code/bin/windres"
+      - "C:/Program Files/dotnet/windres.com"
+      - "C:/Program Files/dotnet/windres.exe"
+      - "C:/Program Files/dotnet/windres"
+      - "C:/Program Files/CMake/bin/windres.com"
+      - "C:/Program Files/CMake/bin/windres.exe"
+      - "C:/Program Files/CMake/bin/windres"
+      - "C:/Program Files/Tailscale/windres.com"
+      - "C:/Program Files/Tailscale/windres.exe"
+      - "C:/Program Files/Tailscale/windres"
+      - "C:/Program Files/WSL/windres.com"
+      - "C:/Program Files/WSL/windres.exe"
+      - "C:/Program Files/WSL/windres"
+      - "C:/Program Files/PuTTY/windres.com"
+      - "C:/Program Files/PuTTY/windres.exe"
+      - "C:/Program Files/PuTTY/windres"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/windres.com"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/windres.exe"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/windres"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/windres.com"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/windres.exe"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/windres"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/windres.com"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/windres.exe"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/windres"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/windres.com"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/windres.exe"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/windres"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/windres.com"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/windres.exe"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/windres"
+      - "C:/msys64/ucrt64/bin/windres.com"
+    found: "C:/msys64/ucrt64/bin/windres.exe"
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\diary\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\diary\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Microsoft Application Virtualization\\Sequencer\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\WSL\\"
+        - "C:\\Program Files\\PuTTY\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2025.3.4\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/toychain"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/toychain"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/diary/Documents/uni/cryptography/toychain_cpp/build/release/CMakeFiles/CMakeScratch/TryCompile-g35xvr"
+      binary: "C:/Users/diary/Documents/uni/cryptography/toychain_cpp/build/release/CMakeFiles/CMakeScratch/TryCompile-g35xvr"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/diary/Documents/uni/cryptography/toychain_cpp/build/release/CMakeFiles/CMakeScratch/TryCompile-g35xvr'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_ca7b5/fast
+        C:/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_ca7b5.dir\\build.make CMakeFiles/cmTC_ca7b5.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/diary/Documents/uni/cryptography/toychain_cpp/build/release/CMakeFiles/CMakeScratch/TryCompile-g35xvr'
+        Building CXX object CMakeFiles/cmTC_ca7b5.dir/CMakeCXXCompilerABI.cpp.obj
+        C:\\msys64\\ucrt64\\bin\\g++.exe   -v -o CMakeFiles\\cmTC_ca7b5.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
+        Using built-in specs.
+        COLLECT_GCC=C:\\msys64\\ucrt64\\bin\\g++.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../gcc-15.2.0/configure --prefix=/ucrt64 --with-local-prefix=/ucrt64/local --libexecdir=/ucrt64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-mingw-wildcard --enable-languages=c,lto,c++,fortran,ada,objc,obj-c++,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-backtrace=yes --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-lto --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/ucrt64 --with-mpfr=/ucrt64 --with-mpc=/ucrt64 --with-isl=/ucrt64 --with-pkgversion='Rev13, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --with-libstdcxx-zoneinfo=yes --disable-libstdcxx-debug --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.2.0 (Rev13, Built by MSYS2 project) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_ca7b5.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_ca7b5.dir\\'
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe -quiet -v -iprefix C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_ca7b5.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\Users\\diary\\AppData\\Local\\Temp\\ccoadhM5.s
+        GNU C++17 (Rev13, Built by MSYS2 project) version 15.2.0 (x86_64-w64-mingw32)
+        	compiled by GNU C version 15.2.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/include"
+        ignoring duplicate directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0"
+        ignoring duplicate directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0/x86_64-w64-mingw32"
+        ignoring duplicate directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0/backward"
+        ignoring duplicate directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/include"
+        ignoring nonexistent directory "D:/M/msys64/ucrt64/include"
+        ignoring nonexistent directory "/ucrt64/include"
+        ignoring duplicate directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed"
+        ignoring nonexistent directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0/x86_64-w64-mingw32
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0/backward
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed
+        End of search list.
+        Compiler executable checksum: 12cd7a79b0110cd574152ed764c1a3d2
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_ca7b5.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_ca7b5.dir\\'
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_ca7b5.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\diary\\AppData\\Local\\Temp\\ccoadhM5.s
+        GNU assembler version 2.46 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.46
+        COMPILER_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/msys64/ucrt64/bin/../lib/gcc/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/
+        LIBRARY_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/msys64/ucrt64/bin/../lib/gcc/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_ca7b5.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_ca7b5.dir\\CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_ca7b5.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_ca7b5.dir\\link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=C:\\msys64\\ucrt64\\bin\\g++.exe
+        COLLECT_LTO_WRAPPER=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../gcc-15.2.0/configure --prefix=/ucrt64 --with-local-prefix=/ucrt64/local --libexecdir=/ucrt64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-mingw-wildcard --enable-languages=c,lto,c++,fortran,ada,objc,obj-c++,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-backtrace=yes --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-lto --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/ucrt64 --with-mpfr=/ucrt64 --with-mpc=/ucrt64 --with-isl=/ucrt64 --with-pkgversion='Rev13, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --with-libstdcxx-zoneinfo=yes --disable-libstdcxx-debug --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.2.0 (Rev13, Built by MSYS2 project) 
+        COMPILER_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/msys64/ucrt64/bin/../lib/gcc/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/
+        LIBRARY_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/msys64/ucrt64/bin/../lib/gcc/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ca7b5.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_ca7b5.'
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\diary\\AppData\\Local\\Temp\\ccgy013g.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_ca7b5.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_ca7b5.dir/objects.a --no-whole-archive --out-implib libcmTC_ca7b5.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
+        collect2 version 15.2.0
+        C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\diary\\AppData\\Local\\Temp\\ccgy013g.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_ca7b5.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_ca7b5.dir/objects.a --no-whole-archive --out-implib libcmTC_ca7b5.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
+        GNU ld (GNU Binutils) 2.46
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ca7b5.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_ca7b5.'
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_ca7b5.dir/objects.a
+        C:\\msys64\\ucrt64\\bin\\ar.exe qc CMakeFiles\\cmTC_ca7b5.dir/objects.a @CMakeFiles\\cmTC_ca7b5.dir\\objects1.rsp
+        C:\\msys64\\ucrt64\\bin\\g++.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_ca7b5.dir/objects.a -Wl,--no-whole-archive -o cmTC_ca7b5.exe -Wl,--out-implib,libcmTC_ca7b5.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        mingw32-make[1]: Leaving directory 'C:/Users/diary/Documents/uni/cryptography/toychain_cpp/build/release/CMakeFiles/CMakeScratch/TryCompile-g35xvr'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0]
+          add: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0/x86_64-w64-mingw32]
+          add: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0/backward]
+          add: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include]
+          add: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include]
+          add: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed]
+        end of search list found
+        collapse include dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0] ==> [C:/msys64/ucrt64/include/c++/15.2.0]
+        collapse include dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0/x86_64-w64-mingw32] ==> [C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32]
+        collapse include dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0/backward] ==> [C:/msys64/ucrt64/include/c++/15.2.0/backward]
+        collapse include dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include] ==> [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include]
+        collapse include dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include] ==> [C:/msys64/ucrt64/include]
+        collapse include dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed] ==> [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed]
+        implicit include dirs: [C:/msys64/ucrt64/include/c++/15.2.0;C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32;C:/msys64/ucrt64/include/c++/15.2.0/backward;C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include;C:/msys64/ucrt64/include;C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: 'C:/Users/diary/Documents/uni/cryptography/toychain_cpp/build/release/CMakeFiles/CMakeScratch/TryCompile-g35xvr']
+        ignore line: []
+        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_ca7b5/fast]
+        ignore line: [C:/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_ca7b5.dir\\build.make CMakeFiles/cmTC_ca7b5.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/diary/Documents/uni/cryptography/toychain_cpp/build/release/CMakeFiles/CMakeScratch/TryCompile-g35xvr']
+        ignore line: [Building CXX object CMakeFiles/cmTC_ca7b5.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [C:\\msys64\\ucrt64\\bin\\g++.exe   -v -o CMakeFiles\\cmTC_ca7b5.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\msys64\\ucrt64\\bin\\g++.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../gcc-15.2.0/configure --prefix=/ucrt64 --with-local-prefix=/ucrt64/local --libexecdir=/ucrt64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-mingw-wildcard --enable-languages=c,lto,c++,fortran,ada,objc,obj-c++,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-backtrace=yes --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-lto --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/ucrt64 --with-mpfr=/ucrt64 --with-mpc=/ucrt64 --with-isl=/ucrt64 --with-pkgversion='Rev13, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --with-libstdcxx-zoneinfo=yes --disable-libstdcxx-debug --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.2.0 (Rev13  Built by MSYS2 project) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_ca7b5.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_ca7b5.dir\\']
+        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe -quiet -v -iprefix C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_ca7b5.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\Users\\diary\\AppData\\Local\\Temp\\ccoadhM5.s]
+        ignore line: [GNU C++17 (Rev13  Built by MSYS2 project) version 15.2.0 (x86_64-w64-mingw32)]
+        ignore line: [	compiled by GNU C version 15.2.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/include"]
+        ignore line: [ignoring duplicate directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0"]
+        ignore line: [ignoring duplicate directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0/x86_64-w64-mingw32"]
+        ignore line: [ignoring duplicate directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0/backward"]
+        ignore line: [ignoring duplicate directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/include"]
+        ignore line: [ignoring nonexistent directory "D:/M/msys64/ucrt64/include"]
+        ignore line: [ignoring nonexistent directory "/ucrt64/include"]
+        ignore line: [ignoring duplicate directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/ucrt64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0]
+        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0/x86_64-w64-mingw32]
+        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include/c++/15.2.0/backward]
+        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include]
+        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include]
+        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 12cd7a79b0110cd574152ed764c1a3d2]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_ca7b5.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_ca7b5.dir\\']
+        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_ca7b5.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\diary\\AppData\\Local\\Temp\\ccoadhM5.s]
+        ignore line: [GNU assembler version 2.46 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.46]
+        ignore line: [COMPILER_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_ca7b5.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_ca7b5.dir\\CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_ca7b5.exe]
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_ca7b5.dir\\link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\msys64\\ucrt64\\bin\\g++.exe]
+        ignore line: [COLLECT_LTO_WRAPPER=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../gcc-15.2.0/configure --prefix=/ucrt64 --with-local-prefix=/ucrt64/local --libexecdir=/ucrt64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-mingw-wildcard --enable-languages=c,lto,c++,fortran,ada,objc,obj-c++,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-backtrace=yes --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-lto --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/ucrt64 --with-mpfr=/ucrt64 --with-mpc=/ucrt64 --with-isl=/ucrt64 --with-pkgversion='Rev13, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --with-libstdcxx-zoneinfo=yes --disable-libstdcxx-debug --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.2.0 (Rev13  Built by MSYS2 project) ]
+        ignore line: [COMPILER_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ca7b5.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_ca7b5.']
+        link line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\diary\\AppData\\Local\\Temp\\ccgy013g.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_ca7b5.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_ca7b5.dir/objects.a --no-whole-archive --out-implib libcmTC_ca7b5.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
+          arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll] ==> ignore
+          arg [-plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\diary\\AppData\\Local\\Temp\\ccgy013g.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
+          arg [-plugin-opt=-pass-through=-luser32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-m] ==> ignore
+          arg [i386pep] ==> ignore
+          arg [-Bdynamic] ==> search dynamic
+          arg [-o] ==> ignore
+          arg [cmTC_ca7b5.exe] ==> ignore
+          arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o] ==> obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o]
+          arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o] ==> obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o]
+          arg [-LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0] ==> dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0]
+          arg [-LC:/msys64/ucrt64/bin/../lib/gcc] ==> dir [C:/msys64/ucrt64/bin/../lib/gcc]
+          arg [-LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib]
+          arg [-LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib] ==> dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib]
+          arg [-LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib] ==> dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib]
+          arg [-LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../..] ==> dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../..]
+          arg [-v] ==> ignore
+          arg [--whole-archive] ==> ignore
+          arg [CMakeFiles\\cmTC_ca7b5.dir/objects.a] ==> ignore
+          arg [--no-whole-archive] ==> ignore
+          arg [--out-implib] ==> ignore
+          arg [libcmTC_ca7b5.dll.a] ==> ignore
+          arg [--major-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [--minor-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-ladvapi32] ==> lib [advapi32]
+          arg [-lshell32] ==> lib [shell32]
+          arg [-luser32] ==> lib [user32]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o] ==> obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o]
+          arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o] ==> obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
+        ignore line: [collect2 version 15.2.0]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\diary\\AppData\\Local\\Temp\\ccgy013g.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_ca7b5.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_ca7b5.dir/objects.a --no-whole-archive --out-implib libcmTC_ca7b5.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
+        linker tool for 'CXX': C:/msys64/ucrt64/x86_64-w64-mingw32/bin/ld.exe
+        remove lib [msvcrt]
+        remove lib [msvcrt]
+        collapse obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o] ==> [C:/msys64/ucrt64/lib/crt2.o]
+        collapse obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o] ==> [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o]
+        collapse obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o] ==> [C:/msys64/ucrt64/lib/default-manifest.o]
+        collapse obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o] ==> [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
+        collapse library dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0] ==> [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0]
+        collapse library dir [C:/msys64/ucrt64/bin/../lib/gcc] ==> [C:/msys64/ucrt64/lib/gcc]
+        collapse library dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> [C:/msys64/ucrt64/x86_64-w64-mingw32/lib]
+        collapse library dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib] ==> [C:/msys64/ucrt64/lib]
+        collapse library dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib] ==> [C:/msys64/ucrt64/x86_64-w64-mingw32/lib]
+        collapse library dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../..] ==> [C:/msys64/ucrt64/lib]
+        implicit libs: [stdc++;mingw32;gcc_s;gcc;mingwex;kernel32;pthread;advapi32;shell32;user32;kernel32;mingw32;gcc_s;gcc;mingwex;kernel32]
+        implicit objs: [C:/msys64/ucrt64/lib/crt2.o;C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o;C:/msys64/ucrt64/lib/default-manifest.o;C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
+        implicit dirs: [C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0;C:/msys64/ucrt64/lib/gcc;C:/msys64/ucrt64/x86_64-w64-mingw32/lib;C:/msys64/ucrt64/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/msys64/ucrt64/x86_64-w64-mingw32/bin/ld.exe" "-v"
+      GNU ld (GNU Binutils) 2.46
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindOpenSSL.cmake:370 (find_path)"
+      - "CMakeLists.txt:15 (find_package)"
+    mode: "path"
+    variable: "OPENSSL_INCLUDE_DIR"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "openssl/ssl.h"
+    candidate_directories:
+      - "C:/msys64/ucrt64/include/"
+      - "C:/msys64/ucrt64/"
+    found: "C:/msys64/ucrt64/include/"
+    search_context:
+      package_stack:
+        -
+          package_paths:
+            - "C:/msys64/ucrt64"
+      CMAKE_PREFIX_PATH:
+        - "C:/msys64/ucrt64"
+      ENV{PATH}:
+        - "c:\\Users\\diary\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\diary\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Microsoft Application Virtualization\\Sequencer\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\WSL\\"
+        - "C:\\Program Files\\PuTTY\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2025.3.4\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/toychain"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/toychain"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindOpenSSL.cmake:569 (find_library)"
+      - "CMakeLists.txt:15 (find_package)"
+    mode: "library"
+    variable: "LIB_EAY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "crypto"
+      - "libeay32"
+    candidate_directories:
+      - "C:/msys64/ucrt64/lib/MinGW/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/lib64/"
+      - "C:/msys64/ucrt64/"
+    searched_directories:
+      - "C:/msys64/ucrt64/lib/MinGW/"
+      - "C:/msys64/ucrt64/lib/MinGW/"
+    found: "C:/msys64/ucrt64/lib/libcrypto.dll.a"
+    search_context:
+      package_stack:
+        -
+          package_paths:
+            - "C:/msys64/ucrt64"
+      CMAKE_PREFIX_PATH:
+        - "C:/msys64/ucrt64"
+      ENV{PATH}:
+        - "c:\\Users\\diary\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\diary\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Microsoft Application Virtualization\\Sequencer\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\WSL\\"
+        - "C:\\Program Files\\PuTTY\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2025.3.4\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/toychain"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/toychain"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "C:/Program Files (x86)/toychain/bin"
+        - "C:/Program Files/CMake/bin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindOpenSSL.cmake:580 (find_library)"
+      - "CMakeLists.txt:15 (find_package)"
+    mode: "library"
+    variable: "SSL_EAY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ssl"
+      - "ssleay32"
+    candidate_directories:
+      - "C:/msys64/ucrt64/lib/MinGW/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/lib64/"
+      - "C:/msys64/ucrt64/"
+    searched_directories:
+      - "C:/msys64/ucrt64/lib/MinGW/"
+      - "C:/msys64/ucrt64/lib/MinGW/"
+    found: "C:/msys64/ucrt64/lib/libssl.dll.a"
+    search_context:
+      package_stack:
+        -
+          package_paths:
+            - "C:/msys64/ucrt64"
+      CMAKE_PREFIX_PATH:
+        - "C:/msys64/ucrt64"
+      ENV{PATH}:
+        - "c:\\Users\\diary\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\diary\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Microsoft Application Virtualization\\Sequencer\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\WSL\\"
+        - "C:\\Program Files\\PuTTY\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2025.3.4\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/toychain"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/toychain"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "C:/Program Files (x86)/toychain/bin"
+        - "C:/Program Files/CMake/bin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindOpenCL.cmake:148 (find_path)"
+      - "CMakeLists.txt:16 (find_package)"
+    mode: "path"
+    variable: "OpenCL_INCLUDE_DIR"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CL/cl.h"
+      - "OpenCL/cl.h"
+    candidate_directories:
+      - "C:/msys64/ucrt64/include/include/"
+      - "C:/msys64/ucrt64/include/OpenCL/common/inc/"
+      - "C:/msys64/ucrt64/include/AMD APP/include/"
+      - "C:/msys64/ucrt64/include/"
+      - "C:/msys64/ucrt64/include/"
+      - "C:/msys64/ucrt64/OpenCL/common/inc/"
+      - "C:/msys64/ucrt64/AMD APP/include/"
+      - "C:/msys64/ucrt64/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/include/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/OpenCL/common/inc/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/AMD APP/include/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/include/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/OpenCL/common/inc/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/AMD APP/include/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Windows/System32/include/"
+      - "C:/Windows/System32/OpenCL/common/inc/"
+      - "C:/Windows/System32/AMD APP/include/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/include/"
+      - "C:/Windows/OpenCL/common/inc/"
+      - "C:/Windows/AMD APP/include/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/include/"
+      - "C:/Windows/System32/wbem/OpenCL/common/inc/"
+      - "C:/Windows/System32/wbem/AMD APP/include/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/include/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/OpenCL/common/inc/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/AMD APP/include/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/include/"
+      - "C:/Windows/System32/OpenSSH/OpenCL/common/inc/"
+      - "C:/Windows/System32/OpenSSH/AMD APP/include/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/include/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/OpenCL/common/inc/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/AMD APP/include/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/include/"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/OpenCL/common/inc/"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/AMD APP/include/"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/"
+      - "C:/Program Files/Git/cmd/include/"
+      - "C:/Program Files/Git/cmd/OpenCL/common/inc/"
+      - "C:/Program Files/Git/cmd/AMD APP/include/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Microsoft VS Code/bin/include/"
+      - "C:/Program Files/Microsoft VS Code/bin/OpenCL/common/inc/"
+      - "C:/Program Files/Microsoft VS Code/bin/AMD APP/include/"
+      - "C:/Program Files/Microsoft VS Code/bin/"
+      - "C:/Program Files/dotnet/include/"
+      - "C:/Program Files/dotnet/OpenCL/common/inc/"
+      - "C:/Program Files/dotnet/AMD APP/include/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/CMake/bin/include/"
+      - "C:/Program Files/CMake/bin/OpenCL/common/inc/"
+      - "C:/Program Files/CMake/bin/AMD APP/include/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Tailscale/include/"
+      - "C:/Program Files/Tailscale/OpenCL/common/inc/"
+      - "C:/Program Files/Tailscale/AMD APP/include/"
+      - "C:/Program Files/Tailscale/"
+      - "C:/Program Files/WSL/include/"
+      - "C:/Program Files/WSL/OpenCL/common/inc/"
+      - "C:/Program Files/WSL/AMD APP/include/"
+      - "C:/Program Files/WSL/"
+      - "C:/Program Files/PuTTY/include/"
+      - "C:/Program Files/PuTTY/OpenCL/common/inc/"
+      - "C:/Program Files/PuTTY/AMD APP/include/"
+      - "C:/Program Files/PuTTY/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/include/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/OpenCL/common/inc/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/AMD APP/include/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/include/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/OpenCL/common/inc/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/AMD APP/include/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/include/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/OpenCL/common/inc/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/AMD APP/include/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/include/"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/OpenCL/common/inc/"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/AMD APP/include/"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/include/"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/OpenCL/common/inc/"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/AMD APP/include/"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/"
+      - "C:/msys64/ucrt64/bin/include/"
+      - "C:/msys64/ucrt64/bin/OpenCL/common/inc/"
+      - "C:/msys64/ucrt64/bin/AMD APP/include/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/include/"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/OpenCL/common/inc/"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/AMD APP/include/"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/"
+      - "C:/Program Files/include/include/"
+      - "C:/Program Files/include/OpenCL/common/inc/"
+      - "C:/Program Files/include/AMD APP/include/"
+      - "C:/Program Files/include/"
+      - "C:/Program Files/include/"
+      - "C:/Program Files/OpenCL/common/inc/"
+      - "C:/Program Files/AMD APP/include/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/include/include/"
+      - "C:/Program Files (x86)/include/OpenCL/common/inc/"
+      - "C:/Program Files (x86)/include/AMD APP/include/"
+      - "C:/Program Files (x86)/include/"
+      - "C:/Program Files (x86)/include/"
+      - "C:/Program Files (x86)/OpenCL/common/inc/"
+      - "C:/Program Files (x86)/AMD APP/include/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/include/include/"
+      - "C:/Program Files/CMake/include/OpenCL/common/inc/"
+      - "C:/Program Files/CMake/include/AMD APP/include/"
+      - "C:/Program Files/CMake/include/"
+      - "C:/Program Files/CMake/include/"
+      - "C:/Program Files/CMake/OpenCL/common/inc/"
+      - "C:/Program Files/CMake/AMD APP/include/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files (x86)/toychain/include/include/"
+      - "C:/Program Files (x86)/toychain/include/OpenCL/common/inc/"
+      - "C:/Program Files (x86)/toychain/include/AMD APP/include/"
+      - "C:/Program Files (x86)/toychain/include/"
+      - "C:/Program Files (x86)/toychain/include/"
+      - "C:/Program Files (x86)/toychain/OpenCL/common/inc/"
+      - "C:/Program Files (x86)/toychain/AMD APP/include/"
+      - "C:/Program Files (x86)/toychain/"
+      - "C:/Program Files (x86)/include/"
+      - "C:/Program Files (x86)/OpenCL/common/inc/"
+      - "C:/Program Files (x86)/AMD APP/include/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/include/"
+      - "C:/Program Files/OpenCL/common/inc/"
+      - "C:/Program Files/AMD APP/include/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/OpenCLHeaders/include/"
+      - "C:/Program Files (x86)/OpenCLHeaders/OpenCL/common/inc/"
+      - "C:/Program Files (x86)/OpenCLHeaders/AMD APP/include/"
+      - "C:/Program Files (x86)/OpenCLHeaders/"
+      - "C:/Program Files/OpenCLHeaders/include/"
+      - "C:/Program Files/OpenCLHeaders/OpenCL/common/inc/"
+      - "C:/Program Files/OpenCLHeaders/AMD APP/include/"
+      - "C:/Program Files/OpenCLHeaders/"
+      - "/usr/local/cuda/include/"
+      - "/usr/local/cuda/OpenCL/common/inc/"
+      - "/usr/local/cuda/AMD APP/include/"
+      - "/usr/local/cuda/"
+      - "/opt/cuda/include/"
+      - "/opt/cuda/OpenCL/common/inc/"
+      - "/opt/cuda/AMD APP/include/"
+      - "/opt/cuda/"
+    searched_directories:
+      - "C:/msys64/ucrt64/include/include/CL/cl.h"
+      - "C:/msys64/ucrt64/include/OpenCL/common/inc/CL/cl.h"
+      - "C:/msys64/ucrt64/include/AMD APP/include/CL/cl.h"
+    found: "C:/msys64/ucrt64/include/"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "C:/msys64/ucrt64"
+      ENV{PATH}:
+        - "c:\\Users\\diary\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\diary\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Microsoft Application Virtualization\\Sequencer\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\WSL\\"
+        - "C:\\Program Files\\PuTTY\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2025.3.4\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/toychain"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/toychain"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CheckIncludeFiles.cmake:201 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindOpenCL.cmake:110 (check_include_files)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindOpenCL.cmake:169 (_FIND_OPENCL_VERSION)"
+      - "CMakeLists.txt:16 (find_package)"
+    checks:
+      - "Looking for include file OpenCL/cl.h"
+    directories:
+      source: "C:/Users/diary/Documents/uni/cryptography/toychain_cpp/build/release/CMakeFiles/CMakeScratch/TryCompile-y4vxsx"
+      binary: "C:/Users/diary/Documents/uni/cryptography/toychain_cpp/build/release/CMakeFiles/CMakeScratch/TryCompile-y4vxsx"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "OpenCL_HAVE_OPENCL_CL_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/diary/Documents/uni/cryptography/toychain_cpp/build/release/CMakeFiles/CMakeScratch/TryCompile-y4vxsx'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_c97e6/fast
+        C:/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_c97e6.dir\\build.make CMakeFiles/cmTC_c97e6.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/diary/Documents/uni/cryptography/toychain_cpp/build/release/CMakeFiles/CMakeScratch/TryCompile-y4vxsx'
+        Building CXX object CMakeFiles/cmTC_c97e6.dir/OpenCL_HAVE_OPENCL_CL_H.cpp.obj
+        C:\\msys64\\ucrt64\\bin\\g++.exe   -std=c++20 -o CMakeFiles\\cmTC_c97e6.dir\\OpenCL_HAVE_OPENCL_CL_H.cpp.obj -c C:\\Users\\diary\\Documents\\uni\\cryptography\\toychain_cpp\\build\\release\\CMakeFiles\\CMakeScratch\\TryCompile-y4vxsx\\OpenCL_HAVE_OPENCL_CL_H.cpp
+        C:\\Users\\diary\\Documents\\uni\\cryptography\\toychain_cpp\\build\\release\\CMakeFiles\\CMakeScratch\\TryCompile-y4vxsx\\OpenCL_HAVE_OPENCL_CL_H.cpp:2:10: fatal error: OpenCL/cl.h: No such file or directory
+            2 | #include <OpenCL/cl.h>
+              |          ^~~~~~~~~~~~~
+        compilation terminated.
+        mingw32-make[1]: *** [CMakeFiles\\cmTC_c97e6.dir\\build.make:80: CMakeFiles/cmTC_c97e6.dir/OpenCL_HAVE_OPENCL_CL_H.cpp.obj] Error 1
+        mingw32-make[1]: Leaving directory 'C:/Users/diary/Documents/uni/cryptography/toychain_cpp/build/release/CMakeFiles/CMakeScratch/TryCompile-y4vxsx'
+        mingw32-make: *** [Makefile:133: cmTC_c97e6/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CheckSymbolExists.cmake:193 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CheckSymbolExists.cmake:102 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindOpenCL.cmake:119 (check_symbol_exists)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindOpenCL.cmake:169 (_FIND_OPENCL_VERSION)"
+      - "CMakeLists.txt:16 (find_package)"
+    checks:
+      - "Looking for CL_VERSION_3_0"
+    directories:
+      source: "C:/Users/diary/Documents/uni/cryptography/toychain_cpp/build/release/CMakeFiles/CMakeScratch/TryCompile-mjfp1x"
+      binary: "C:/Users/diary/Documents/uni/cryptography/toychain_cpp/build/release/CMakeFiles/CMakeScratch/TryCompile-mjfp1x"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "OPENCL_VERSION_3_0"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/diary/Documents/uni/cryptography/toychain_cpp/build/release/CMakeFiles/CMakeScratch/TryCompile-mjfp1x'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_45220/fast
+        C:/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_45220.dir\\build.make CMakeFiles/cmTC_45220.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/diary/Documents/uni/cryptography/toychain_cpp/build/release/CMakeFiles/CMakeScratch/TryCompile-mjfp1x'
+        Building CXX object CMakeFiles/cmTC_45220.dir/CheckSymbolExists.cxx.obj
+        C:\\msys64\\ucrt64\\bin\\g++.exe   -std=c++20 -o CMakeFiles\\cmTC_45220.dir\\CheckSymbolExists.cxx.obj -c C:\\Users\\diary\\Documents\\uni\\cryptography\\toychain_cpp\\build\\release\\CMakeFiles\\CMakeScratch\\TryCompile-mjfp1x\\CheckSymbolExists.cxx
+        In file included from C:/msys64/ucrt64/include/CL/cl.h:20,
+                         from C:\\Users\\diary\\Documents\\uni\\cryptography\\toychain_cpp\\build\\release\\CMakeFiles\\CMakeScratch\\TryCompile-mjfp1x\\CheckSymbolExists.cxx:2:
+        C:/msys64/ucrt64/include/CL/cl_version.h:22:104: note: '#pragma message: cl_version.h: CL_TARGET_OPENCL_VERSION is not defined. Defaulting to 310 (OpenCL 3.1)'
+           22 | #pragma message("cl_version.h: CL_TARGET_OPENCL_VERSION is not defined. Defaulting to 310 (OpenCL 3.1)")
+              |                                                                                                        ^
+        Linking CXX executable cmTC_45220.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_45220.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_45220.dir/objects.a
+        C:\\msys64\\ucrt64\\bin\\ar.exe qc CMakeFiles\\cmTC_45220.dir/objects.a @CMakeFiles\\cmTC_45220.dir\\objects1.rsp
+        C:\\msys64\\ucrt64\\bin\\g++.exe -Wl,--whole-archive CMakeFiles\\cmTC_45220.dir/objects.a -Wl,--no-whole-archive -o cmTC_45220.exe -Wl,--out-implib,libcmTC_45220.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_45220.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/Users/diary/Documents/uni/cryptography/toychain_cpp/build/release/CMakeFiles/CMakeScratch/TryCompile-mjfp1x'
+        
+      exitCode: 0
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindOpenCL.cmake:192 (find_library)"
+      - "CMakeLists.txt:16 (find_package)"
+    mode: "library"
+    variable: "OpenCL_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "OpenCL"
+    candidate_directories:
+      - "C:/msys64/ucrt64/lib/AMD APP/lib/x86_64/"
+      - "C:/msys64/ucrt64/lib/lib/x86_64/"
+      - "C:/msys64/ucrt64/lib/lib/x64/"
+      - "C:/msys64/ucrt64/lib/lib/"
+      - "C:/msys64/ucrt64/lib/OpenCL/common/lib/x64/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/AMD APP/lib/x86_64/"
+      - "C:/msys64/ucrt64/lib/x86_64/"
+      - "C:/msys64/ucrt64/lib/x64/"
+      - "C:/msys64/ucrt64/lib/"
+      - "C:/msys64/ucrt64/OpenCL/common/lib/x64/"
+      - "C:/msys64/ucrt64/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/AMD APP/lib/x86_64/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/x86_64/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/x64/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/OpenCL/common/lib/x64/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/AMD APP/lib/x86_64/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/x86_64/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/x64/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/OpenCL/common/lib/x64/"
+      - "C:/Users/diary/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Windows/System32/AMD APP/lib/x86_64/"
+      - "C:/Windows/System32/lib/x86_64/"
+      - "C:/Windows/System32/lib/x64/"
+      - "C:/Windows/System32/lib/"
+      - "C:/Windows/System32/OpenCL/common/lib/x64/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/AMD APP/lib/x86_64/"
+      - "C:/Windows/lib/x86_64/"
+      - "C:/Windows/lib/x64/"
+      - "C:/Windows/lib/"
+      - "C:/Windows/OpenCL/common/lib/x64/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/AMD APP/lib/x86_64/"
+      - "C:/Windows/System32/wbem/lib/x86_64/"
+      - "C:/Windows/System32/wbem/lib/x64/"
+      - "C:/Windows/System32/wbem/lib/"
+      - "C:/Windows/System32/wbem/OpenCL/common/lib/x64/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/AMD APP/lib/x86_64/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lib/x86_64/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lib/x64/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lib/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/OpenCL/common/lib/x64/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/AMD APP/lib/x86_64/"
+      - "C:/Windows/System32/OpenSSH/lib/x86_64/"
+      - "C:/Windows/System32/OpenSSH/lib/x64/"
+      - "C:/Windows/System32/OpenSSH/lib/"
+      - "C:/Windows/System32/OpenSSH/OpenCL/common/lib/x64/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/AMD APP/lib/x86_64/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lib/x86_64/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lib/x64/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lib/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/OpenCL/common/lib/x64/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/AMD APP/lib/x86_64/"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/lib/x86_64/"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/lib/x64/"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/lib/"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/OpenCL/common/lib/x64/"
+      - "C:/Program Files (x86)/Windows Kits/10/Microsoft Application Virtualization/Sequencer/"
+      - "C:/Program Files/Git/cmd/AMD APP/lib/x86_64/"
+      - "C:/Program Files/Git/cmd/lib/x86_64/"
+      - "C:/Program Files/Git/cmd/lib/x64/"
+      - "C:/Program Files/Git/cmd/lib/"
+      - "C:/Program Files/Git/cmd/OpenCL/common/lib/x64/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Microsoft VS Code/bin/AMD APP/lib/x86_64/"
+      - "C:/Program Files/Microsoft VS Code/bin/lib/x86_64/"
+      - "C:/Program Files/Microsoft VS Code/bin/lib/x64/"
+      - "C:/Program Files/Microsoft VS Code/bin/lib/"
+      - "C:/Program Files/Microsoft VS Code/bin/OpenCL/common/lib/x64/"
+      - "C:/Program Files/Microsoft VS Code/bin/"
+      - "C:/Program Files/dotnet/AMD APP/lib/x86_64/"
+      - "C:/Program Files/dotnet/lib/x86_64/"
+      - "C:/Program Files/dotnet/lib/x64/"
+      - "C:/Program Files/dotnet/lib/"
+      - "C:/Program Files/dotnet/OpenCL/common/lib/x64/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/CMake/bin/AMD APP/lib/x86_64/"
+      - "C:/Program Files/CMake/bin/lib/x86_64/"
+      - "C:/Program Files/CMake/bin/lib/x64/"
+      - "C:/Program Files/CMake/bin/lib/"
+      - "C:/Program Files/CMake/bin/OpenCL/common/lib/x64/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/Tailscale/AMD APP/lib/x86_64/"
+      - "C:/Program Files/Tailscale/lib/x86_64/"
+      - "C:/Program Files/Tailscale/lib/x64/"
+      - "C:/Program Files/Tailscale/lib/"
+      - "C:/Program Files/Tailscale/OpenCL/common/lib/x64/"
+      - "C:/Program Files/Tailscale/"
+      - "C:/Program Files/WSL/AMD APP/lib/x86_64/"
+      - "C:/Program Files/WSL/lib/x86_64/"
+      - "C:/Program Files/WSL/lib/x64/"
+      - "C:/Program Files/WSL/lib/"
+      - "C:/Program Files/WSL/OpenCL/common/lib/x64/"
+      - "C:/Program Files/WSL/"
+      - "C:/Program Files/PuTTY/AMD APP/lib/x86_64/"
+      - "C:/Program Files/PuTTY/lib/x86_64/"
+      - "C:/Program Files/PuTTY/lib/x64/"
+      - "C:/Program Files/PuTTY/lib/"
+      - "C:/Program Files/PuTTY/OpenCL/common/lib/x64/"
+      - "C:/Program Files/PuTTY/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/AMD APP/lib/x86_64/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/lib/x86_64/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/lib/x64/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/lib/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/OpenCL/common/lib/x64/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/Scripts/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/AMD APP/lib/x86_64/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/lib/x86_64/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/lib/x64/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/lib/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/OpenCL/common/lib/x64/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Python314/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/AMD APP/lib/x86_64/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/lib/x86_64/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/lib/x64/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/lib/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/OpenCL/common/lib/x64/"
+      - "C:/Users/diary/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/AMD APP/lib/x86_64/"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/lib/x86_64/"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/lib/x64/"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/lib/"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/OpenCL/common/lib/x64/"
+      - "C:/Users/diary/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/AMD APP/lib/x86_64/"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/lib/x86_64/"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/lib/x64/"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/lib/"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/OpenCL/common/lib/x64/"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA 2025.3.4/bin/"
+      - "C:/msys64/ucrt64/bin/AMD APP/lib/x86_64/"
+      - "C:/msys64/ucrt64/bin/lib/x86_64/"
+      - "C:/msys64/ucrt64/bin/lib/x64/"
+      - "C:/msys64/ucrt64/bin/lib/"
+      - "C:/msys64/ucrt64/bin/OpenCL/common/lib/x64/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/AMD APP/lib/x86_64/"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/lib/x86_64/"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/lib/x64/"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/lib/"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/OpenCL/common/lib/x64/"
+      - "C:/Program Files/Tesseract-OCR/tesseract.exe/"
+      - "C:/Program Files/lib/AMD APP/lib/x86_64/"
+      - "C:/Program Files/lib/lib/x86_64/"
+      - "C:/Program Files/lib/lib/x64/"
+      - "C:/Program Files/lib/lib/"
+      - "C:/Program Files/lib/OpenCL/common/lib/x64/"
+      - "C:/Program Files/lib/"
+      - "C:/Program Files/AMD APP/lib/x86_64/"
+      - "C:/Program Files/lib/x86_64/"
+      - "C:/Program Files/lib/x64/"
+      - "C:/Program Files/lib/"
+      - "C:/Program Files/OpenCL/common/lib/x64/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/lib/AMD APP/lib/x86_64/"
+      - "C:/Program Files (x86)/lib/lib/x86_64/"
+      - "C:/Program Files (x86)/lib/lib/x64/"
+      - "C:/Program Files (x86)/lib/lib/"
+      - "C:/Program Files (x86)/lib/OpenCL/common/lib/x64/"
+      - "C:/Program Files (x86)/lib/"
+      - "C:/Program Files (x86)/AMD APP/lib/x86_64/"
+      - "C:/Program Files (x86)/lib/x86_64/"
+      - "C:/Program Files (x86)/lib/x64/"
+      - "C:/Program Files (x86)/lib/"
+      - "C:/Program Files (x86)/OpenCL/common/lib/x64/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/lib/AMD APP/lib/x86_64/"
+      - "C:/Program Files/CMake/lib/lib/x86_64/"
+      - "C:/Program Files/CMake/lib/lib/x64/"
+      - "C:/Program Files/CMake/lib/lib/"
+      - "C:/Program Files/CMake/lib/OpenCL/common/lib/x64/"
+      - "C:/Program Files/CMake/lib/"
+      - "C:/Program Files/CMake/AMD APP/lib/x86_64/"
+      - "C:/Program Files/CMake/lib/x86_64/"
+      - "C:/Program Files/CMake/lib/x64/"
+      - "C:/Program Files/CMake/lib/"
+      - "C:/Program Files/CMake/OpenCL/common/lib/x64/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files (x86)/toychain/lib/AMD APP/lib/x86_64/"
+      - "C:/Program Files (x86)/toychain/lib/lib/x86_64/"
+      - "C:/Program Files (x86)/toychain/lib/lib/x64/"
+      - "C:/Program Files (x86)/toychain/lib/lib/"
+      - "C:/Program Files (x86)/toychain/lib/OpenCL/common/lib/x64/"
+      - "C:/Program Files (x86)/toychain/lib/"
+      - "C:/Program Files (x86)/toychain/AMD APP/lib/x86_64/"
+      - "C:/Program Files (x86)/toychain/lib/x86_64/"
+      - "C:/Program Files (x86)/toychain/lib/x64/"
+      - "C:/Program Files (x86)/toychain/lib/"
+      - "C:/Program Files (x86)/toychain/OpenCL/common/lib/x64/"
+      - "C:/Program Files (x86)/toychain/"
+      - "C:/Program Files (x86)/toychain/bin/AMD APP/lib/x86_64/"
+      - "C:/Program Files (x86)/toychain/bin/lib/x86_64/"
+      - "C:/Program Files (x86)/toychain/bin/lib/x64/"
+      - "C:/Program Files (x86)/toychain/bin/lib/"
+      - "C:/Program Files (x86)/toychain/bin/OpenCL/common/lib/x64/"
+      - "C:/Program Files (x86)/toychain/bin/"
+      - "/bin/AMD APP/lib/x86_64/"
+      - "/bin/lib/x86_64/"
+      - "/bin/lib/x64/"
+      - "/bin/lib/"
+      - "/bin/OpenCL/common/lib/x64/"
+      - "/bin/"
+      - "C:/Program Files (x86)/AMD APP/lib/x86_64/"
+      - "C:/Program Files (x86)/lib/x86_64/"
+      - "C:/Program Files (x86)/lib/x64/"
+      - "C:/Program Files (x86)/lib/"
+      - "C:/Program Files (x86)/OpenCL/common/lib/x64/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/AMD APP/lib/x86_64/"
+      - "C:/Program Files/lib/x86_64/"
+      - "C:/Program Files/lib/x64/"
+      - "C:/Program Files/lib/"
+      - "C:/Program Files/OpenCL/common/lib/x64/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/OpenCL-ICD-Loader/AMD APP/lib/x86_64/"
+      - "C:/Program Files (x86)/OpenCL-ICD-Loader/lib/x86_64/"
+      - "C:/Program Files (x86)/OpenCL-ICD-Loader/lib/x64/"
+      - "C:/Program Files (x86)/OpenCL-ICD-Loader/lib/"
+      - "C:/Program Files (x86)/OpenCL-ICD-Loader/OpenCL/common/lib/x64/"
+      - "C:/Program Files (x86)/OpenCL-ICD-Loader/"
+      - "C:/Program Files/OpenCL-ICD-Loader/AMD APP/lib/x86_64/"
+      - "C:/Program Files/OpenCL-ICD-Loader/lib/x86_64/"
+      - "C:/Program Files/OpenCL-ICD-Loader/lib/x64/"
+      - "C:/Program Files/OpenCL-ICD-Loader/lib/"
+      - "C:/Program Files/OpenCL-ICD-Loader/OpenCL/common/lib/x64/"
+      - "C:/Program Files/OpenCL-ICD-Loader/"
+    searched_directories:
+      - "C:/msys64/ucrt64/lib/AMD APP/lib/x86_64/"
+      - "C:/msys64/ucrt64/lib/lib/x86_64/"
+      - "C:/msys64/ucrt64/lib/lib/x64/"
+      - "C:/msys64/ucrt64/lib/lib/"
+      - "C:/msys64/ucrt64/lib/OpenCL/common/lib/x64/"
+    found: "C:/msys64/ucrt64/lib/OpenCL.lib"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "C:/msys64/ucrt64"
+      ENV{PATH}:
+        - "c:\\Users\\diary\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\diary\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Microsoft Application Virtualization\\Sequencer\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files\\Tailscale\\"
+        - "C:\\Program Files\\WSL\\"
+        - "C:\\Program Files\\PuTTY\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\diary\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2025.3.4\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/toychain"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/toychain"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "C:/Program Files (x86)/toychain/bin"
+        - "C:/Program Files/CMake/bin"
+        - "/bin"
+...

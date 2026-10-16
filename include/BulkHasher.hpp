@@ -13,12 +13,13 @@ public:
     BulkHasher();
     virtual ~BulkHasher() = default;
 
+    virtual bool compute() = 0;
     virtual void setHashes(std::vector<std::string> plainText) = 0;
-    virtual bool computeHash() = 0;
+    //virtual bool computeHash() = 0;
     virtual const std::vector<SHA256Hash>& getHashes() = 0;
     virtual const std::string& getPlaintextAt(std::size_t index) = 0;
 
-    virtual void computeIsMoreDifficult() = 0;
+    //virtual void computeIsMoreDifficult() = 0;
     virtual const std::vector<bool>& getIsMoreDifficult() = 0;
     virtual void setNewDifficulty(int newTarget) = 0;
 

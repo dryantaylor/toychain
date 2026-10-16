@@ -71,11 +71,18 @@ bool meetsDifficulty(const SHA256Hash& hash, int difficulty){
 
 }
 
-
 void CpuBulkHasher::setHashes(std::vector<std::string> plainText)
 {
   this->plainText = plainText;
   textSet = true;
+}
+
+bool CpuBulkHasher::compute(){
+  if (!computeHash()){
+    return false;
+  }
+  computeIsMoreDifficult();
+  return true;
 }
 
 bool CpuBulkHasher::computeHash()

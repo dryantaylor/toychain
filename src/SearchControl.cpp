@@ -28,9 +28,8 @@ void SearchControl::runGuess()
   //std::cout << "setting hashes" << std::endl;
   hasher->setHashes(std::move(plainTexts));
   //std::cout << "Computing Hash" << std::endl;
-  hasher->computeHash();
-  //std::cout << "Computing Difficulty" << std::endl;
-  hasher->computeIsMoreDifficult();
+  hasher->compute();
+
   std::vector<bool> difficulty = hasher->getIsMoreDifficult();
   std::vector<SHA256Hash> hashes = hasher->getHashes();
   bool moreDifficultFound = false;

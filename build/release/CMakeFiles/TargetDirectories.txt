@@ -1,0 +1,3 @@
+C:/Users/diary/Documents/uni/cryptography/toychain_cpp/build/release/CMakeFiles/toychain.dir
+C:/Users/diary/Documents/uni/cryptography/toychain_cpp/build/release/CMakeFiles/edit_cache.dir
+C:/Users/diary/Documents/uni/cryptography/toychain_cpp/build/release/CMakeFiles/rebuild_cache.dir
