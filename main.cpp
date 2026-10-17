@@ -46,6 +46,7 @@ std::unique_ptr<BulkHasher> selectHashingCore(const std::string& coreName, std::
   }
 
   if (coreName == "OpenCL"){
+    std::cout << "Creating OpenCL hasher" <<std::endl;
     return std::make_unique<OpenCLBulkHasher>(batchSize, difficulty);
   }
   throw std::runtime_error("Invalid hashing Core selected");
@@ -64,7 +65,6 @@ int main(int argc, char** argv) {
   if (!usesCout) {
     outFile = new std::ofstream(args.at("file"));
   }
-
   auto searcher = SearchControl(
     std::move(selectHashingCore(args.at("hashCore"), batchSize, difficulty)),
     (usesCout ? std::cout : *outFile),

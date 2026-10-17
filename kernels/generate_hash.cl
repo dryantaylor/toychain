@@ -68,7 +68,7 @@ static void sha256_transform(u32 state[8], __private const uchar* block) {
     state[7] += h;
 }
 
-static void sha256_hash_string(__global const uchar* input_data, size_t length, __global u64* output_words) {
+static void sha256_hash_string(__private uchar* input_data, size_t length, __private u64* output_words) {
     u32 state[8];
     state[0] = 0x6a09e667U;
     state[1] = 0xbb67ae85U;
@@ -104,20 +104,4 @@ static void sha256_hash_string(__global const uchar* input_data, size_t length, 
     output_words[1] = ((u64)state[2] << 32) | (u64)state[3];
     output_words[2] = ((u64)state[4] << 32) | (u64)state[5];
     output_words[3] = ((u64)state[6] << 32) | (u64)state[7];
-}
-
-static void generate_hash(__global const uchar* input_blob,
-                           __global const int* input_lengths,
-                           __global const int* input_offsets,
-                           __global ulong* output_hashes,
-                           const int count) {
-    int gid = get_global_id(0);
-    if (gid >= count) {
-        return;
-    }
-
-    size_t offset = (size_t)input_offsets[gid];
-    size_t length = (size_t)input_lengths[gid];
-    __global const uchar* plaintext = input_blob + offset;
-    sha256_hash_string(plaintext, length, output_hashes + (size_t)gid * 4UL);
 }

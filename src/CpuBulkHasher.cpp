@@ -71,13 +71,18 @@ bool meetsDifficulty(const SHA256Hash& hash, int difficulty){
 
 }
 
-void CpuBulkHasher::setHashes(std::vector<std::string> plainText)
+void CpuBulkHasher::setString(std::string str)
 {
-  this->plainText = plainText;
-  textSet = true;
+  this->stringPrefix = str;
 }
 
-bool CpuBulkHasher::compute(){
+bool CpuBulkHasher::compute()
+{
+  plainText.clear();
+  for (std::size_t i = 0; i < batchSize; i++){
+    int rnd = distrib(randomGen);
+    plainText.push_back(stringPrefix+std::to_string(rnd));
+  }
   if (!computeHash()){
     return false;
   }

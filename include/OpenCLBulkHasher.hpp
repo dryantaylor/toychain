@@ -6,6 +6,7 @@
 #include <cstddef>
 #include <string>
 #include <vector>
+#include <random>
 
 #include <CL/opencl.hpp>
 
@@ -17,22 +18,31 @@ public:
 
     static std::string readFile(const std::string& path);
 
-    void setHashes(std::vector<std::string> plainText) override;
+    void setString(std::string str) override;
     bool compute() override;
 
     const std::vector<SHA256Hash>& getHashes() override;
     const std::string& getPlaintextAt(std::size_t index) override;
     const std::vector<bool>& getIsMoreDifficult() override;
     void setNewDifficulty(int newTarget) override;
+  private:
+    int randomSeed();
 
 private:
+    std::mt19937 randomGen;
+    std::uniform_int_distribution<int> distrib;
+    
     cl::Context context;
     cl::CommandQueue queue;
     cl::Kernel computeKernel;
+    std::size_t localWorkSize;
+
     std::vector<std::string> plainText;
     std::vector<SHA256Hash> hashes;
     std::vector<bool> isMoreDifficult;
     int targetDifficulty;
+    std::string stringPrefix;
+
 };
 
 #endif

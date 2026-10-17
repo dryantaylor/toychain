@@ -6,55 +6,55 @@
 #include <sstream>
 #include <stdexcept>
 
-int GenerateBatchSizeEstimate(cl::Device& device, cl_ulong op_read_size, cl_ulong op_write_size) {
+
+int GenerateBatchSizeEstimate(cl::Device& device, cl_ulong op_write_size) {
     cl_uint computeUnits = 0;
     size_t maxWorkGroupSize = 0;
     cl_ulong globalMemBytes = 0;
     cl_ulong maxAllocBytes = 0;
+    cl_ulong maxFrequency = 0;
+    cl_ulong deviceMemCacheSize = 0;
 
     device.getInfo(CL_DEVICE_MAX_COMPUTE_UNITS, &computeUnits);
     device.getInfo(CL_DEVICE_MAX_WORK_GROUP_SIZE, &maxWorkGroupSize);
     device.getInfo(CL_DEVICE_GLOBAL_MEM_SIZE, &globalMemBytes);
     device.getInfo(CL_DEVICE_MAX_MEM_ALLOC_SIZE, &maxAllocBytes);
+    device.getInfo(CL_DEVICE_MAX_CLOCK_FREQUENCY, &maxFrequency);
+    device.getInfo(CL_DEVICE_GLOBAL_MEM_CACHE_SIZE, &deviceMemCacheSize);
 
-    const size_t preferredWorkGroup = std::min<size_t>(128, std::max<size_t>(1, maxWorkGroupSize));
-    size_t estimated = preferredWorkGroup * static_cast<size_t>(computeUnits) * 8;
+    const size_t preferredWorkGroup = std::min<size_t>(256, std::max<size_t>(64, maxWorkGroupSize));
+    const size_t targetUtilization = std::max<size_t>(1, static_cast<size_t>(computeUnits) * 32U);
+    size_t estimated = preferredWorkGroup * targetUtilization;
 
     const size_t memoryBound = static_cast<size_t>(
-        std::min<cl_ulong>(globalMemBytes / op_read_size, maxAllocBytes / op_write_size)
-    );
+                          maxAllocBytes / std::max<cl_ulong>(op_write_size, 1ULL));
 
     if (memoryBound > 0) {
         estimated = std::min(estimated, memoryBound);
     }
 
-    estimated = std::max<size_t>(preferredWorkGroup, estimated);
-    estimated = (estimated / preferredWorkGroup) * preferredWorkGroup;
+    const size_t frequencyBoost = std::max<size_t>(1U, static_cast<size_t>(maxFrequency) / 400U + 1U);
+    estimated *= frequencyBoost;
+
+    estimated = std::max<size_t>(preferredWorkGroup * 16U, estimated);
+    estimated = ((estimated + preferredWorkGroup - 1U) / preferredWorkGroup) * preferredWorkGroup;
 
     if (estimated == 0) {
-        return static_cast<int>(preferredWorkGroup);
+        return static_cast<int>(preferredWorkGroup * 16U);
     }
 
-    return static_cast<int>(estimated);
-}
-
-bool meetsDifficultyCL(const SHA256Hash& hash, int difficulty) {
-    const int shift = 256 - difficulty;
-    const std::size_t wordIndex = 3 - (shift / 64);
-    const std::size_t bitIndex = shift % 64;
-
-    for (std::size_t i = 0; i < wordIndex; i++) {
-        if (hash.value[i] > 0) {
-            return false;
-        }
+    const size_t maxPracticalBatch =  (64U *1024U * 1024U*1024U) / std::max<size_t>(1U, op_write_size);
+    const int chosen_size = static_cast<int>(std::min<size_t>(estimated, maxPracticalBatch));
+    if (chosen_size == maxPracticalBatch) {
+      std::cout << "Memory Bound" << std::endl;
     }
-
-    const std::uint64_t wordThreshold = 0b1ULL << bitIndex;
-    return hash.value[wordIndex] < wordThreshold;
+    return chosen_size;
 }
 
 OpenCLBulkHasher::OpenCLBulkHasher(std::size_t batchSize, int startingDifficulty)
-    : BulkHasher(), plainText(), targetDifficulty(startingDifficulty) {
+    : BulkHasher(), localWorkSize(128), plainText(), targetDifficulty(startingDifficulty),
+    randomGen(std::random_device{}()),
+    distrib(0, INT_MAX) {
     std::vector<cl::Platform> platforms;
     cl::Platform::get(&platforms);
     if (platforms.empty()) {
@@ -69,11 +69,15 @@ OpenCLBulkHasher::OpenCLBulkHasher(std::size_t batchSize, int startingDifficulty
     }
 
     cl::Device device = devices[0];
+    size_t maxWorkGroupSize = 128;
+    device.getInfo(CL_DEVICE_MAX_WORK_GROUP_SIZE, &maxWorkGroupSize);
+    this->localWorkSize = std::min<std::size_t>(std::max<std::size_t>(1, maxWorkGroupSize), 256U);
 
     if (batchSize == 0) {
-        constexpr cl_ulong inputSizeApprox = (256 + 12 + 20) * sizeof(unsigned char);
-        constexpr cl_ulong outputSize = 4 * sizeof(std::uint64_t);
-        this->batchSize = GenerateBatchSizeEstimate(device, inputSizeApprox, outputSize);
+        constexpr cl_ulong inputSizeApprox = 0;
+        constexpr cl_ulong outputSize = 5 * sizeof(std::uint64_t) + sizeof(bool);
+        this->batchSize = GenerateBatchSizeEstimate(device, outputSize);
+        this->batchSize = std::max<std::size_t>(this->batchSize, this->localWorkSize * 64U);
         std::cout << "Estimated batch size of: " << this->batchSize << std::endl;
     } else {
         this->batchSize = batchSize;
@@ -111,116 +115,135 @@ std::string OpenCLBulkHasher::readFile(const std::string& path) {
     return buffer.str();
 }
 
-void OpenCLBulkHasher::setHashes(std::vector<std::string> plainText) {
-    this->plainText = std::move(plainText);
+void OpenCLBulkHasher::setString(std::string str)
+{
+  this->stringPrefix = str;
 }
 
-bool OpenCLBulkHasher::compute()
-{
-  if (plainText.empty()){
-    return false;
+bool OpenCLBulkHasher::compute() {
+  const int seed1 = randomSeed();
+
+  this->plainText.clear();
+  this->hashes.clear();
+  this->isMoreDifficult.clear();
+
+  std::vector<long> winnerNonces(batchSize);
+  std::vector<std::uint64_t> winnerHashes(batchSize * 4U);
+  int matchCount = 0;
+
+  cl::Buffer stringPrefixBuffer(context, CL_MEM_READ_ONLY | CL_MEM_COPY_HOST_PTR,
+                                stringPrefix.size() + 1U, stringPrefix.data());
+  cl::Buffer winnerNoncesBuffer(context, CL_MEM_READ_WRITE,
+                               batchSize * sizeof(long));
+  cl::Buffer winnerHashesBuffer(context, CL_MEM_READ_WRITE,
+                               batchSize * 4U * sizeof(std::uint64_t));
+  cl::Buffer matchCountBuffer(context, CL_MEM_READ_WRITE,
+                             sizeof(int));
+
+  cl_int argErr = computeKernel.setArg(0, seed1);
+  if (argErr != CL_SUCCESS) {
+      std::cerr << "OpenCL setArg(0) failed with code " << argErr << std::endl;
+      return false;
   }
 
-  const std::size_t workItems = std::min<std::size_t>(batchSize, plainText.size());
-    if (workItems == 0) {
-        return false;
-    }
+  argErr = computeKernel.setArg(1, stringPrefixBuffer);
+  if (argErr != CL_SUCCESS) {
+      std::cerr << "OpenCL setArg(1) failed with code " << argErr << std::endl;
+      return false;
+  }
 
-    hashes.clear();
-    hashes.resize(workItems);
+  argErr = computeKernel.setArg(2, static_cast<int>(stringPrefix.length()));
+  if (argErr != CL_SUCCESS) {
+      std::cerr << "OpenCL setArg(2) failed with code " << argErr << std::endl;
+      return false;
+  }
 
-    std::vector<unsigned char> flatInput;
-    std::vector<int> inputLengths;
-    std::vector<int> inputOffsets;
-    flatInput.reserve(workItems * 64U);
+  argErr = computeKernel.setArg(3, winnerNoncesBuffer);
+  if (argErr != CL_SUCCESS) {
+      std::cerr << "OpenCL setArg(3) failed with code " << argErr << std::endl;
+      return false;
+  }
 
-    std::size_t totalBytes = 0;
-    for (const std::string& text : plainText) {
-        inputOffsets.push_back(static_cast<int>(totalBytes));
-        inputLengths.push_back(static_cast<int>(text.size()));
-        flatInput.insert(flatInput.end(), text.begin(), text.end());
-        totalBytes += text.size();
-    }
+  argErr = computeKernel.setArg(4, winnerHashesBuffer);
+  if (argErr != CL_SUCCESS) {
+      std::cerr << "OpenCL setArg(4) failed with code " << argErr << std::endl;
+      return false;
+  }
 
-    cl::Buffer inputBuffer(context, CL_MEM_READ_ONLY | CL_MEM_COPY_HOST_PTR,
-                          flatInput.size() * sizeof(unsigned char), flatInput.data());
-    cl::Buffer lengthsBuffer(context, CL_MEM_READ_ONLY | CL_MEM_COPY_HOST_PTR,
-                            inputLengths.size() * sizeof(int), inputLengths.data());
-    cl::Buffer offsetsBuffer(context, CL_MEM_READ_ONLY | CL_MEM_COPY_HOST_PTR,
-                            inputOffsets.size() * sizeof(int), inputOffsets.data());
-    cl::Buffer outputHashesBuffer(context, CL_MEM_READ_WRITE,
-                           workItems * 4U * sizeof(std::uint64_t));
-    cl::Buffer outputDifficultyBuffer(context, CL_MEM_WRITE_ONLY, workItems*sizeof(bool));
+  argErr = computeKernel.setArg(5, matchCountBuffer);
+  if (argErr != CL_SUCCESS) {
+      std::cerr << "OpenCL setArg(5) failed with code " << argErr << std::endl;
+      return false;
+  }
 
-    cl_int argErr = computeKernel.setArg(0, inputBuffer);
-    if (argErr != CL_SUCCESS) {
-        std::cerr << "OpenCL setArg(0) failed with code " << argErr << std::endl;
-        return false;
-    }
-    argErr = computeKernel.setArg(1, lengthsBuffer);
-    if (argErr != CL_SUCCESS) {
-        std::cerr << "OpenCL setArg(1) failed with code " << argErr << std::endl;
-        return false;
-    }
-    argErr = computeKernel.setArg(2, offsetsBuffer);
-    if (argErr != CL_SUCCESS) {
-        std::cerr << "OpenCL setArg(2) failed with code " << argErr << std::endl;
-        return false;
-    }
-    argErr = computeKernel.setArg(3, outputHashesBuffer);
-    if (argErr != CL_SUCCESS) {
-        std::cerr << "OpenCL setArg(3) failed with code " << argErr << std::endl;
-        return false;
-    }
-    argErr = computeKernel.setArg(4, outputDifficultyBuffer);
-    if (argErr != CL_SUCCESS) {
-        std::cerr << "OpenCL setArg(4) failed with code " << argErr << std::endl;
-        return false;
-    }
-    int effectiveDifficulty = std::max(0, std::min(256, targetDifficulty));
+  argErr = computeKernel.setArg(6, targetDifficulty);
+  if (argErr != CL_SUCCESS) {
+      std::cerr << "OpenCL setArg(6) failed with code " << argErr << std::endl;
+      return false;
+  }
 
-    argErr = computeKernel.setArg(5, effectiveDifficulty);
-    if (argErr != CL_SUCCESS) {
-        std::cerr << "OpenCL setArg(5) failed with code " << argErr << std::endl;
-        return false;
-    }
+  argErr = computeKernel.setArg(7, static_cast<int>(batchSize));
+  if (argErr != CL_SUCCESS) {
+      std::cerr << "OpenCL setArg(7) failed with code " << argErr << std::endl;
+      return false;
+  }
 
-    argErr = computeKernel.setArg(6, static_cast<int>(workItems));
-    if (argErr != CL_SUCCESS) {
-        std::cerr << "OpenCL setArg(6) failed with code " << argErr << std::endl;
-        return false;
-    }
+  cl_int writeErr = queue.enqueueWriteBuffer(matchCountBuffer, CL_TRUE, 0, sizeof(int), &matchCount);
+  if (writeErr != CL_SUCCESS) {
+      std::cerr << "OpenCL write match count failed with code " << writeErr << std::endl;
+      return false;
+  }
 
-    cl_int kernelErr = queue.enqueueNDRangeKernel(computeKernel, cl::NullRange, cl::NDRange(workItems), cl::NullRange);
-    if (kernelErr != CL_SUCCESS) {
-        std::cerr << "OpenCL kernel launch failed with code " << kernelErr << std::endl;
-        return false;
-    }
+  const size_t globalSize = ((batchSize + localWorkSize - 1U) / localWorkSize) * localWorkSize;
+  cl_int kernelErr = queue.enqueueNDRangeKernel(
+      computeKernel,
+      cl::NullRange,
+      cl::NDRange(globalSize),
+      cl::NDRange(localWorkSize));
+  if (kernelErr != CL_SUCCESS) {
+      std::cerr << "OpenCL kernel launch failed with code " << kernelErr << std::endl;
+      return false;
+  }
 
-    std::vector<std::uint64_t> HashesOutput(workItems * 4U);
-    cl_int readErr = queue.enqueueReadBuffer(outputHashesBuffer, CL_TRUE, 0,
-                                            HashesOutput.size() * sizeof(std::uint64_t), HashesOutput.data());
-    if (readErr != CL_SUCCESS) {
-        std::cerr << "OpenCL read failed with code " << readErr << std::endl;
-        return false;
-    }
-    bool outputDifficulty[workItems];
-    readErr = queue.enqueueReadBuffer(outputDifficultyBuffer,CL_TRUE,0, workItems * sizeof(bool), outputDifficulty);
-    if (readErr != CL_SUCCESS) {
-        std::cerr << "OpenCL read failed with code " << readErr << std::endl;
-        return false;
-    }
+  cl_int readErr = queue.enqueueReadBuffer(matchCountBuffer, CL_TRUE, 0, sizeof(int), &matchCount);
+  if (readErr != CL_SUCCESS) {
+      std::cerr << "OpenCL read match count failed with code " << readErr << std::endl;
+      return false;
+  }
 
-    isMoreDifficult.clear();
-    for (std::size_t i = 0; i < workItems; ++i) {
-        const std::size_t base = i * 4U;
-        hashes[i] = SHA256Hash(HashesOutput[base], HashesOutput[base + 1U], HashesOutput[base + 2U], HashesOutput[base + 3U]);
-        isMoreDifficult.push_back(outputDifficulty[i]);
-    }
-    
-    return true;
+  if (matchCount > 0) {
+      winnerNonces.resize(static_cast<std::size_t>(matchCount));
+      winnerHashes.resize(static_cast<std::size_t>(matchCount) * 4U);
 
+      readErr = queue.enqueueReadBuffer(winnerNoncesBuffer, CL_TRUE, 0,
+                                       static_cast<std::size_t>(matchCount) * sizeof(long),
+                                       winnerNonces.data());
+      if (readErr != CL_SUCCESS) {
+          std::cerr << "OpenCL read winners failed with code " << readErr << std::endl;
+          return false;
+      }
 
+      readErr = queue.enqueueReadBuffer(winnerHashesBuffer, CL_TRUE, 0,
+                                       static_cast<std::size_t>(matchCount) * 4U * sizeof(std::uint64_t),
+                                       winnerHashes.data());
+      if (readErr != CL_SUCCESS) {
+          std::cerr << "OpenCL read winner hashes failed with code " << readErr << std::endl;
+          return false;
+      }
+  }
+
+  this->isMoreDifficult.resize(static_cast<std::size_t>(matchCount), true);
+  this->plainText.reserve(static_cast<std::size_t>(matchCount));
+  this->hashes.reserve(static_cast<std::size_t>(matchCount));
+
+  for (int i = 0; i < matchCount; ++i) {
+      const std::size_t base = static_cast<std::size_t>(i) * 4U;
+      this->plainText.emplace_back(stringPrefix + std::to_string(winnerNonces[static_cast<std::size_t>(i)]));
+      this->hashes.emplace_back(SHA256Hash(winnerHashes[base], winnerHashes[base + 1U],
+                                          winnerHashes[base + 2U], winnerHashes[base + 3U]));
+  }
+
+  return true;
 }
 
 
@@ -238,4 +261,9 @@ const std::vector<bool>& OpenCLBulkHasher::getIsMoreDifficult() {
 
 void OpenCLBulkHasher::setNewDifficulty(int newTarget) {
     targetDifficulty = newTarget;
+}
+
+int OpenCLBulkHasher::randomSeed()
+{
+  return distrib(randomGen);
 }

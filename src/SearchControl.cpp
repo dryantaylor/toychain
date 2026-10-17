@@ -11,23 +11,12 @@ SearchControl::SearchControl(std::unique_ptr<BulkHasher> hasher, std::ostream& o
                              randomGen(std::random_device{}()),
                              distrib(0, UINT64_MAX)
 {
+  std::string prefix = startingHash.to_string()+name;
+  this->hasher->setString(prefix);
 }
 
 void SearchControl::runGuess()
 {
-  std::vector<std::string> plainTexts;
-  
-  for (std::size_t i = 0; i < hasher->getBatchSize(); i++){
-    
-    std::uint64_t nonce = distrib(randomGen);
-    std::string nonce_str = std::to_string(nonce);
-
-    std::string plainText = currentHash.to_string() + name + nonce_str;
-    plainTexts.push_back(plainText);
-  }
-  //std::cout << "setting hashes" << std::endl;
-  hasher->setHashes(std::move(plainTexts));
-  //std::cout << "Computing Hash" << std::endl;
   hasher->compute();
 
   std::vector<bool> difficulty = hasher->getIsMoreDifficult();
@@ -35,20 +24,21 @@ void SearchControl::runGuess()
   bool moreDifficultFound = false;
   int maxDifficulty = 0;
   std::size_t hashIndex = 0;
-  for (std::size_t i = 0; i < hasher->getBatchSize(); i++){
-    if (difficulty[i] && hashes.at(i).difficulty() > maxDifficulty){
+  for (std::size_t i = 0; i < difficulty.size(); i++) {
+    if (difficulty[i] && hashes.at(i).difficulty() > maxDifficulty) {
       moreDifficultFound = true;
       hashIndex = i;
       maxDifficulty = hashes.at(i).difficulty();
     }
   }
 
-  if (moreDifficultFound){
+  if (moreDifficultFound) {
+    hasher->setString(hashes.at(hashIndex).to_string() + name);
     hasher->setNewDifficulty(hashes.at(hashIndex).difficulty() + 1);
-    currentHash = hashes.at(hashIndex);
     outstream << hasher->getPlaintextAt(hashIndex) << std::endl;
-    std::cout << "Soloution Found -" << hasher->getPlaintextAt(hashIndex) << "   -"<< currentHash.difficulty()<< std::endl;
+    std::cout << "New Hash found: " << hasher->getPlaintextAt(hashIndex)
+    << " - " << hashes.at(hashIndex).difficulty() << std::endl;
   }
-  current_proccessed+= hasher->getBatchSize();
+  current_proccessed += hasher->getBatchSize();
 }
 

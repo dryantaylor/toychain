@@ -13,9 +13,8 @@ public:
     BulkHasher();
     virtual ~BulkHasher() = default;
 
+    virtual void setString(std::string str) =0;
     virtual bool compute() = 0;
-    virtual void setHashes(std::vector<std::string> plainText) = 0;
-    //virtual bool computeHash() = 0;
     virtual const std::vector<SHA256Hash>& getHashes() = 0;
     virtual const std::string& getPlaintextAt(std::size_t index) = 0;
 

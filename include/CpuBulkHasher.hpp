@@ -4,11 +4,14 @@
 #include "BulkHasher.hpp"
 #include <vector>
 #include <string>
+#include <random>
 
 class CpuBulkHasher : public BulkHasher {
   public:
-    CpuBulkHasher(std::size_t batchSize, int startingDifficulty = 1) : BulkHasher(batchSize), targetDifficulty(startingDifficulty) {};
-    void setHashes(std::vector<std::string> plainText) override;
+    CpuBulkHasher(std::size_t batchSize, int startingDifficulty = 1) : BulkHasher(batchSize), targetDifficulty(startingDifficulty),
+      randomGen(std::random_device{}()),
+      distrib(0, INT_MAX)  {};
+    void setString(std::string str) override;
     bool compute() override;
     bool computeHash();
     const std::vector<SHA256Hash>& getHashes() override;
@@ -19,11 +22,15 @@ class CpuBulkHasher : public BulkHasher {
     void setNewDifficulty(int newTarget) override;
 
   private:
-      std::vector<std::string> plainText;
-      bool textSet = false;
-      std::vector<SHA256Hash> hashes;
-      std::vector<bool> isMoreDifficult;
-      int targetDifficulty = 0;
+    std::mt19937 randomGen;
+    std::uniform_int_distribution<int> distrib;
+
+    std::string stringPrefix;
+    std::vector<std::string> plainText;
+    bool textSet = false;
+    std::vector<SHA256Hash> hashes;
+    std::vector<bool> isMoreDifficult;
+    int targetDifficulty = 0;
 };
 
 
