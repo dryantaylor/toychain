@@ -74,7 +74,7 @@ int main(int argc, char** argv) {
 
   while (true){
     searcher.runGuess();
-    //std::cout << "Current processed: " << searcher.current_proccessed << std::endl;
+    std::cout << "Current processed: " << searcher.current_proccessed << std::endl;
   }
 
   return 0;

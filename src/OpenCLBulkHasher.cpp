@@ -1,6 +1,8 @@
 #include "OpenCLBulkHasher.hpp"
 
 #include <algorithm>
+#include <cctype>
+#include <cctype>
 #include <fstream>
 #include <iostream>
 #include <sstream>
@@ -10,51 +12,71 @@
 int GenerateBatchSizeEstimate(cl::Device& device, cl_ulong op_write_size) {
     cl_uint computeUnits = 0;
     size_t maxWorkGroupSize = 0;
-    cl_ulong globalMemBytes = 0;
     cl_ulong maxAllocBytes = 0;
-    cl_ulong maxFrequency = 0;
-    cl_ulong deviceMemCacheSize = 0;
+    cl_ulong maxClockMHz = 0;
+    cl_ulong globalMemBytes = 0;
+    cl_device_type deviceType = 0;
+    std::string deviceName;
 
     device.getInfo(CL_DEVICE_MAX_COMPUTE_UNITS, &computeUnits);
     device.getInfo(CL_DEVICE_MAX_WORK_GROUP_SIZE, &maxWorkGroupSize);
-    device.getInfo(CL_DEVICE_GLOBAL_MEM_SIZE, &globalMemBytes);
     device.getInfo(CL_DEVICE_MAX_MEM_ALLOC_SIZE, &maxAllocBytes);
-    device.getInfo(CL_DEVICE_MAX_CLOCK_FREQUENCY, &maxFrequency);
-    device.getInfo(CL_DEVICE_GLOBAL_MEM_CACHE_SIZE, &deviceMemCacheSize);
+    device.getInfo(CL_DEVICE_MAX_CLOCK_FREQUENCY, &maxClockMHz);
+    device.getInfo(CL_DEVICE_GLOBAL_MEM_SIZE, &globalMemBytes);
+    device.getInfo(CL_DEVICE_TYPE, &deviceType);
+    device.getInfo(CL_DEVICE_NAME, &deviceName);
 
-    const size_t preferredWorkGroup = std::min<size_t>(256, std::max<size_t>(64, maxWorkGroupSize));
-    const size_t targetUtilization = std::max<size_t>(1, static_cast<size_t>(computeUnits) * 32U);
-    size_t estimated = preferredWorkGroup * targetUtilization;
+    std::string lowerName = deviceName;
+    std::transform(lowerName.begin(), lowerName.end(), lowerName.begin(), [](unsigned char c) {
+        return static_cast<char>(std::tolower(c));
+    });
+
+    const bool isIntegratedGpu = (deviceType & CL_DEVICE_TYPE_GPU) &&
+        (computeUnits <= 12U || maxClockMHz < 1500U ||
+         lowerName.find("intel") != std::string::npos
+        )
+        ;
+
+    const size_t preferredWorkGroup = std::min<size_t>(256U, std::max<size_t>(64U, maxWorkGroupSize));
+
+    size_t targetItems = 0;
+    if (isIntegratedGpu) {
+        targetItems = std::max<size_t>(preferredWorkGroup * 4096U,
+                                      static_cast<size_t>(computeUnits) * 2U * 1024U * 1024U);
+        targetItems = std::min<size_t>(targetItems, 32U * 1024U * 1024U);
+    } else {
+        targetItems = std::max<size_t>(64U * 1024U * 1024U,
+                                      static_cast<size_t>(computeUnits) * 8U * 1024U * 1024U);
+        targetItems = std::min<size_t>(targetItems, 256U * 1024U * 1024U);
+      }
+
+    size_t estimated = targetItems;
 
     const size_t memoryBound = static_cast<size_t>(
-                          maxAllocBytes / std::max<cl_ulong>(op_write_size, 1ULL));
-
+        maxAllocBytes / std::max<cl_ulong>(op_write_size, 1ULL));
     if (memoryBound > 0) {
         estimated = std::min(estimated, memoryBound);
     }
 
-    const size_t frequencyBoost = std::max<size_t>(1U, static_cast<size_t>(maxFrequency) / 400U + 1U);
-    estimated *= frequencyBoost;
+    const size_t totalMemWindow = static_cast<size_t>(globalMemBytes / 8U);
+    if (totalMemWindow > 0) {
+        estimated = std::min(estimated, totalMemWindow);
+    }
 
-    estimated = std::max<size_t>(preferredWorkGroup * 16U, estimated);
+    estimated = std::max<size_t>(preferredWorkGroup * 128U, estimated);
     estimated = ((estimated + preferredWorkGroup - 1U) / preferredWorkGroup) * preferredWorkGroup;
 
     if (estimated == 0) {
-        return static_cast<int>(preferredWorkGroup * 16U);
+        return static_cast<int>(preferredWorkGroup * 128U);
     }
 
-    const size_t maxPracticalBatch =  (64U *1024U * 1024U*1024U) / std::max<size_t>(1U, op_write_size);
-    const int chosen_size = static_cast<int>(std::min<size_t>(estimated, maxPracticalBatch));
-    if (chosen_size == maxPracticalBatch) {
-      std::cout << "Memory Bound" << std::endl;
-    }
-    return chosen_size;
+    return static_cast<int>(estimated);
 }
 
 OpenCLBulkHasher::OpenCLBulkHasher(std::size_t batchSize, int startingDifficulty)
     : BulkHasher(), localWorkSize(128), plainText(), targetDifficulty(startingDifficulty),
     randomGen(std::random_device{}()),
-    distrib(0, INT_MAX) {
+    distrib(0, std::numeric_limits<std::uint64_t>::max()) {
     std::vector<cl::Platform> platforms;
     cl::Platform::get(&platforms);
     if (platforms.empty()) {
@@ -70,8 +92,27 @@ OpenCLBulkHasher::OpenCLBulkHasher(std::size_t batchSize, int startingDifficulty
 
     cl::Device device = devices[0];
     size_t maxWorkGroupSize = 128;
+    cl_device_type deviceType = 0;
+    std::string deviceName;
     device.getInfo(CL_DEVICE_MAX_WORK_GROUP_SIZE, &maxWorkGroupSize);
-    this->localWorkSize = std::min<std::size_t>(std::max<std::size_t>(1, maxWorkGroupSize), 256U);
+    device.getInfo(CL_DEVICE_TYPE, &deviceType);
+    device.getInfo(CL_DEVICE_NAME, &deviceName);
+
+    std::string lowerName = deviceName;
+    std::transform(lowerName.begin(), lowerName.end(), lowerName.begin(), [](unsigned char c) {
+        return static_cast<char>(std::tolower(c));
+    });
+
+    const bool isIntegrated = (deviceType & CL_DEVICE_TYPE_GPU) &&
+        (lowerName.find("intel") != std::string::npos ||
+         lowerName.find("uhd") != std::string::npos ||
+         lowerName.find("iris") != std::string::npos ||
+         lowerName.find("radeon graphics") != std::string::npos ||
+         lowerName.find("vega") != std::string::npos ||
+         lowerName.find("integrated") != std::string::npos);
+
+    this->localWorkSize = isIntegrated ? std::min<std::size_t>(std::max<std::size_t>(1, maxWorkGroupSize), 128U)
+                                      : std::min<std::size_t>(std::max<std::size_t>(1, maxWorkGroupSize), 256U);
 
     if (batchSize == 0) {
         constexpr cl_ulong inputSizeApprox = 0;
@@ -121,7 +162,8 @@ void OpenCLBulkHasher::setString(std::string str)
 }
 
 bool OpenCLBulkHasher::compute() {
-  const int seed1 = randomSeed();
+  const std::uint64_t seedLow = randomSeedLow();
+  const std::uint64_t seedHigh = randomSeedHigh();
 
   this->plainText.clear();
   this->hashes.clear();
@@ -140,51 +182,57 @@ bool OpenCLBulkHasher::compute() {
   cl::Buffer matchCountBuffer(context, CL_MEM_READ_WRITE,
                              sizeof(int));
 
-  cl_int argErr = computeKernel.setArg(0, seed1);
+  cl_int argErr = computeKernel.setArg(0, seedLow);
   if (argErr != CL_SUCCESS) {
       std::cerr << "OpenCL setArg(0) failed with code " << argErr << std::endl;
       return false;
   }
 
-  argErr = computeKernel.setArg(1, stringPrefixBuffer);
+  argErr = computeKernel.setArg(1, seedHigh);
   if (argErr != CL_SUCCESS) {
       std::cerr << "OpenCL setArg(1) failed with code " << argErr << std::endl;
       return false;
   }
 
-  argErr = computeKernel.setArg(2, static_cast<int>(stringPrefix.length()));
+  argErr = computeKernel.setArg(2, stringPrefixBuffer);
   if (argErr != CL_SUCCESS) {
       std::cerr << "OpenCL setArg(2) failed with code " << argErr << std::endl;
       return false;
   }
 
-  argErr = computeKernel.setArg(3, winnerNoncesBuffer);
+  argErr = computeKernel.setArg(3, static_cast<int>(stringPrefix.length()));
   if (argErr != CL_SUCCESS) {
       std::cerr << "OpenCL setArg(3) failed with code " << argErr << std::endl;
       return false;
   }
 
-  argErr = computeKernel.setArg(4, winnerHashesBuffer);
+  argErr = computeKernel.setArg(4, winnerNoncesBuffer);
   if (argErr != CL_SUCCESS) {
       std::cerr << "OpenCL setArg(4) failed with code " << argErr << std::endl;
       return false;
   }
 
-  argErr = computeKernel.setArg(5, matchCountBuffer);
+  argErr = computeKernel.setArg(5, winnerHashesBuffer);
   if (argErr != CL_SUCCESS) {
       std::cerr << "OpenCL setArg(5) failed with code " << argErr << std::endl;
       return false;
   }
 
-  argErr = computeKernel.setArg(6, targetDifficulty);
+  argErr = computeKernel.setArg(6, matchCountBuffer);
   if (argErr != CL_SUCCESS) {
       std::cerr << "OpenCL setArg(6) failed with code " << argErr << std::endl;
       return false;
   }
 
-  argErr = computeKernel.setArg(7, static_cast<int>(batchSize));
+  argErr = computeKernel.setArg(7, targetDifficulty);
   if (argErr != CL_SUCCESS) {
       std::cerr << "OpenCL setArg(7) failed with code " << argErr << std::endl;
+      return false;
+  }
+
+  argErr = computeKernel.setArg(8, static_cast<int>(batchSize));
+  if (argErr != CL_SUCCESS) {
+      std::cerr << "OpenCL setArg(8) failed with code " << argErr << std::endl;
       return false;
   }
 
@@ -263,7 +311,12 @@ void OpenCLBulkHasher::setNewDifficulty(int newTarget) {
     targetDifficulty = newTarget;
 }
 
-int OpenCLBulkHasher::randomSeed()
+std::uint64_t OpenCLBulkHasher::randomSeedLow()
+{
+  return distrib(randomGen);
+}
+
+std::uint64_t OpenCLBulkHasher::randomSeedHigh()
 {
   return distrib(randomGen);
 }

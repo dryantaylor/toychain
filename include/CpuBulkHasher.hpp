@@ -10,7 +10,7 @@ class CpuBulkHasher : public BulkHasher {
   public:
     CpuBulkHasher(std::size_t batchSize, int startingDifficulty = 1) : BulkHasher(batchSize), targetDifficulty(startingDifficulty),
       randomGen(std::random_device{}()),
-      distrib(0, INT_MAX)  {};
+      distrib(0, 128)  {};
     void setString(std::string str) override;
     bool compute() override;
     bool computeHash();

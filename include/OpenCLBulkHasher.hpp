@@ -4,6 +4,8 @@
 #define CL_HPP_TARGET_OPENCL_VERSION 310
 
 #include <cstddef>
+#include <cstdint>
+#include <limits>
 #include <string>
 #include <vector>
 #include <random>
@@ -26,11 +28,12 @@ public:
     const std::vector<bool>& getIsMoreDifficult() override;
     void setNewDifficulty(int newTarget) override;
   private:
-    int randomSeed();
+    std::uint64_t randomSeedLow();
+    std::uint64_t randomSeedHigh();
 
 private:
-    std::mt19937 randomGen;
-    std::uniform_int_distribution<int> distrib;
+    std::mt19937_64 randomGen;
+    std::uniform_int_distribution<std::uint64_t> distrib;
     
     cl::Context context;
     cl::CommandQueue queue;
